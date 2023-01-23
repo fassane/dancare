@@ -8,13 +8,13 @@ Détection de la Rétinopathie Diabétique en utilisant le deep learning
 
 
 
-## Technologies and Architecture
+## Technologies utilisées
 Pyhton, Django, Tensorflow, Keras, PyTorch
 
 
 ## Contenu
 
-**Page d'acceuil:** Presentation, 
+**Page d'acceuil:** Présentation, 
 
 **Page Fonctionnalités:** Modèles de données
 
