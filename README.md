@@ -81,16 +81,16 @@ $ pip install django
 $ pip install -r requirements.txt
 ```
 
-#### Configuration a faire
+#### Configuration à faire
 
 A la fin du fichier `diabetic_retinopathy/settings.py` vous devez changer le
-chemin du fichier.
+chemin du fichier selon vous.
 
 
 #### Important
 
 Présentement, les modèles ont été entrainé depuis les données de la compétiton
-ATPOS disponible sur *kaggle* via le lien https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Aussi a l'aide de **Tensorflow**. 
+ATPOS disponible sur *kaggle* via le lien https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Aussi à l'aide de **Tensorflow**. 
 Vous pouvez trouver ces modèles dans le dossier `diab_retina_app/model`.
 
 
