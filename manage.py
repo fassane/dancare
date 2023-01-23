@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# main
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'diabetic_retinopathy.settings')
     try:
