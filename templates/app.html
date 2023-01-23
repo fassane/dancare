@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static 'icon.png' %}" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/fonction.css' %}" type="text/css">
+    <!-- css files -->
+    <!-- svgs -->
+    <svg class="hidden">
+        <symbol id="arrow_right" viewBox="0 0 24 24">
+            <title>Arrow right</title>
+            <path d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.5 12H20.33" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 32 32">
+            <title>Facebook</title>
+            <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 32 32">
+            <title>Instagram</title>
+            <path d="M25.805 7.996c0 0 0 0.001 0 0.001 0 0.994-0.806 1.799-1.799 1.799s-1.799-0.806-1.799-1.799c0-0.994 0.806-1.799 1.799-1.799v0c0.993 0.001 1.798 0.805 1.799 1.798v0zM16 20.999c-2.761 0-4.999-2.238-4.999-4.999s2.238-4.999 4.999-4.999c2.761 0 4.999 2.238 4.999 4.999v0c0 0 0 0.001 0 0.001 0 2.76-2.237 4.997-4.997 4.997-0 0-0.001 0-0.001 0h0zM16 8.3c0 0 0 0-0 0-4.253 0-7.7 3.448-7.7 7.7s3.448 7.7 7.7 7.7c4.253 0 7.7-3.448 7.7-7.7v0c0-0 0-0 0-0.001 0-4.252-3.447-7.7-7.7-7.7-0 0-0 0-0.001 0h0zM16 3.704c4.003 0 4.48 0.020 6.061 0.089 1.003 0.012 1.957 0.202 2.84 0.538l-0.057-0.019c1.314 0.512 2.334 1.532 2.835 2.812l0.012 0.034c0.316 0.826 0.504 1.781 0.516 2.778l0 0.005c0.071 1.582 0.087 2.057 0.087 6.061s-0.019 4.48-0.092 6.061c-0.019 1.004-0.21 1.958-0.545 2.841l0.019-0.058c-0.258 0.676-0.64 1.252-1.123 1.726l-0.001 0.001c-0.473 0.484-1.049 0.866-1.692 1.109l-0.032 0.011c-0.829 0.316-1.787 0.504-2.788 0.516l-0.005 0c-1.592 0.071-2.061 0.087-6.072 0.087-4.013 0-4.481-0.019-6.072-0.092-1.008-0.019-1.966-0.21-2.853-0.545l0.059 0.019c-0.676-0.254-1.252-0.637-1.722-1.122l-0.001-0.001c-0.489-0.47-0.873-1.047-1.114-1.693l-0.010-0.031c-0.315-0.828-0.506-1.785-0.525-2.785l-0-0.008c-0.056-1.575-0.076-2.061-0.076-6.053 0-3.994 0.020-4.481 0.076-6.075 0.019-1.007 0.209-1.964 0.544-2.85l-0.019 0.059c0.247-0.679 0.632-1.257 1.123-1.724l0.002-0.002c0.468-0.492 1.045-0.875 1.692-1.112l0.031-0.010c0.823-0.318 1.774-0.509 2.768-0.526l0.007-0c1.593-0.056 2.062-0.075 6.072-0.075zM16 1.004c-4.074 0-4.582 0.019-6.182 0.090-1.315 0.028-2.562 0.282-3.716 0.723l0.076-0.025c-1.040 0.397-1.926 0.986-2.656 1.728l-0.001 0.001c-0.745 0.73-1.333 1.617-1.713 2.607l-0.017 0.050c-0.416 1.078-0.67 2.326-0.697 3.628l-0 0.012c-0.075 1.6-0.090 2.108-0.090 6.182s0.019 4.582 0.090 6.182c0.028 1.315 0.282 2.562 0.723 3.716l-0.025-0.076c0.796 2.021 2.365 3.59 4.334 4.368l0.052 0.018c1.078 0.415 2.326 0.669 3.628 0.697l0.012 0c1.6 0.075 2.108 0.090 6.182 0.090s4.582-0.019 6.182-0.090c1.315-0.029 2.562-0.282 3.716-0.723l-0.076 0.026c2.021-0.796 3.59-2.365 4.368-4.334l0.018-0.052c0.416-1.078 0.669-2.326 0.697-3.628l0-0.012c0.075-1.6 0.090-2.108 0.090-6.182s-0.019-4.582-0.090-6.182c-0.029-1.315-0.282-2.562-0.723-3.716l0.026 0.076c-0.398-1.040-0.986-1.926-1.729-2.656l-0.001-0.001c-0.73-0.745-1.617-1.333-2.607-1.713l-0.050-0.017c-1.078-0.416-2.326-0.67-3.628-0.697l-0.012-0c-1.6-0.075-2.108-0.090-6.182-0.090z"></path>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 32 32">
+            <title>Twitter</title>
+            <path d="M30.917 6.728c-1.026 0.465-2.217 0.805-3.464 0.961l-0.061 0.006c1.268-0.771 2.222-1.952 2.687-3.354l0.013-0.044c-1.124 0.667-2.431 1.179-3.82 1.464l-0.082 0.014c-1.123-1.199-2.717-1.946-4.485-1.946-3.391 0-6.14 2.749-6.14 6.14 0 0.496 0.059 0.979 0.17 1.441l-0.008-0.042c-5.113-0.254-9.613-2.68-12.629-6.366l-0.025-0.031c-0.522 0.873-0.831 1.926-0.831 3.052 0 0.013 0 0.026 0 0.039v-0.002c0 0.001 0 0.003 0 0.005 0 2.12 1.075 3.989 2.709 5.093l0.022 0.014c-1.026-0.034-1.979-0.315-2.811-0.785l0.031 0.016v0.075c0 0.001 0 0.002 0 0.002 0 2.961 2.095 5.434 4.884 6.014l0.040 0.007c-0.484 0.135-1.040 0.212-1.614 0.212-0.406 0-0.802-0.039-1.186-0.113l0.039 0.006c0.813 2.459 3.068 4.212 5.739 4.264l0.006 0c-2.072 1.638-4.721 2.627-7.602 2.627-0.005 0-0.009 0-0.014 0h0.001c-0.515-0.001-1.022-0.031-1.521-0.089l0.061 0.006c2.663 1.729 5.92 2.757 9.418 2.757 0.005 0 0.009 0 0.014 0h-0.001c0.037 0 0.082 0 0.126 0 9.578 0 17.343-7.765 17.343-17.343 0-0.039-0-0.077-0-0.116l0 0.006c0-0.262 0-0.524-0.019-0.786 1.21-0.878 2.229-1.931 3.042-3.136l0.028-0.044z"></path>
+        </symbol>
+        <symbol id="github" viewBox="0 0 48 48">
+            <title>Github</title>
+            <path d="M30 44.004v-10c0-.884-.197-1.722-.542-2.479.825-.167 1.65-.358 2.472-.601 2.527-.746 6.154-3.839 7.226-6.863 1.188-3.356 1.188-6.76 0-10.116l-.001-.001c-.213-.603-.537-1.211-.998-1.868.848-3.154.253-5.792.225-5.915l-.365-1.564-1.606.019c-.15.002-3.48.063-6.724 1.955a29.635 29.635 0 0 0-11.371 0c-3.243-1.892-6.573-1.953-6.724-1.955l-1.608-.019-.365 1.564c-.028.123-.623 2.761.225 5.915-.461.657-.785 1.266-.999 1.869-1.187 3.356-1.187 6.76.001 10.117 1.07 3.023 4.697 6.116 7.225 6.862.822.243 1.647.434 2.472.601A5.946 5.946 0 0 0 18 34.004v1.281c-.062.036-.127.065-.187.108-.289.211-2.869 1.967-5.505.09-.93-.946-1.386-1.639-1.826-2.309-.988-1.5-1.841-2.586-4.588-3.96a2 2 0 1 0-1.789 3.579c1.991.995 2.341 1.525 3.035 2.581.515.781 1.155 1.754 2.445 3.044l.215.186c1.692 1.27 3.447 1.723 5.053 1.723A9.286 9.286 0 0 0 18 39.76v4.253l12-.009z"/>
+        </symbol>
+        <symbol id="docker" viewBox="0 0 32 32">
+            <title>Docker</title>
+            <path d="M6.427 23.031c-0.911 0-1.739-0.744-1.739-1.651s0.744-1.656 1.739-1.656c1 0 1.751 0.745 1.751 1.656 0 0.907-0.833 1.651-1.745 1.651zM27.776 14.016c-0.183-1.323-1-2.401-2.079-3.224l-0.421-0.333-0.339 0.411c-0.656 0.745-0.921 2.068-0.839 3.057 0.079 0.751 0.317 1.495 0.74 2.073-0.344 0.177-0.76 0.333-1.084 0.505-0.76 0.249-1.5 0.333-2.239 0.333h-21.385l-0.084 0.489c-0.156 1.579 0.084 3.229 0.751 4.724l0.328 0.579v0.077c2 3.313 5.557 4.803 9.437 4.803 7.459 0 13.573-3.224 16.473-10.177 1.901 0.083 3.819-0.412 4.719-2.235l0.24-0.411-0.396-0.251c-1.083-0.661-2.563-0.749-3.801-0.416l-0.027 0.005zM17.099 12.693h-3.239v3.228h3.239zM17.099 8.636h-3.239v3.228h3.239zM17.099 4.495h-3.239v3.229h3.239zM21.057 12.693h-3.219v3.228h3.229v-3.228zM9.063 12.693h-3.219v3.228h3.229v-3.228zM13.099 12.693h-3.197v3.228h3.219v-3.228zM5.063 12.693h-3.199v3.228h3.24v-3.228zM13.099 8.636h-3.197v3.228h3.219v-3.224zM9.041 8.636h-3.192v3.228h3.219v-3.224l-0.021-0.004z"/>
+        </symbol>
+        <symbol id="arrow_down" viewBox="0 0 24 24">
+            <title>Arrow down</title>
+            <path d="M6 13L11.6464 18.6464C11.8417 18.8417 12.1583 18.8417 12.3536 18.6464L18 13" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19L12 6" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+    <!-- svgs -->
+</head>
+
+<body>
+    <!-- /.header -->
+    <header>
+        <div class="headside">
+            <div class="headside_left">
+                <a href="/">
+                    <img src="{% static 'images/logo.png' %}" alt="" srcset="">
+                </a>
+            </div>
+            <div class="headside_right">
+                <a class="link item" href="/">
+                    Acceuil
+                </a>
+                <a class="link item" href="{% url 'about' %}">
+                    A propos
+                </a>
+                <a class="link item" href="{% url 'fonction' %}">
+                    Fonctionalités
+                </a>
+                <a class="link button" href="{% url 'demo' %}">
+                    Commencer
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    <!-- /.main -->
+    <main>
+        {% block content %}
+
+        {% endblock %}  
+    </main>
+    <!-- /.main -->
+    <!-- /.footer -->
+    <footer >
+        <div class="footer_links">
+            <div class="container">
+                <div class="c_grid">
+                    <div class="footer_title">
+                        <a href="/" class="title link">
+                            Dancare
+                        </a>
+                    </div>
+                    <div class="util_links">
+                        <h3>Liens utiles</h3>
+                        <a class="link" href="#"><p>Rétinopathie</p></a>
+                        <a class="link" href="#"><p>Les 4 stades</p></a>
+                        <a class="link" href="#"><p>Faire le test</p></a>
+                    </div>
+                    <div class="about">
+                        <h3>A propos</h3>
+                        <a class="link" href="#"><p>Concepteurs</p></a>
+                        <a class="link" href="#"><p>Tout savoir sur l'app</p></a>
+                        <a class="link" href="#"><p>Perspectives</p></a>
+                    </div>
+                    <div class="fonction">
+                        <h3>Fonctionalités</h3>
+                        <a class="link" href="#"><p>Jeu de données</p></a>
+                        <a class="link" href="#"><p>Entrainement de données</p></a>
+                        <a class="link" href="#"><p>Procédures</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="footer_socials">
+            <a class="social link" href="#">
+                <svg>
+                    <use xlink:href="#facebook" fill="#fff"></use>
+                </svg>
+            </a>
+            <a class="social link" href="#">
+                <svg>
+                    <use xlink:href="#twitter" fill="#fff"></use>
+                </svg>
+            </a>
+            <a class="social link" href="#">
+                <svg>
+                    <use xlink:href="#github" fill="#fff"></use>
+                </svg>
+            </a>
+            <a class="social link" href="#">
+                <svg>
+                    <use xlink:href="#docker" fill="#fff"></use>
+                </svg>
+            </a>
+            <a class="social link" href="#">
+                <svg>
+                    <use xlink:href="#instagram" fill="#fff"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="copyright">
+            © <em>Dancare</em>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("input[id='image']").on('change', function (event) {
+                let input = this;
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#banner').css('width', '350px')
+                    $('#banner').addClass('img-thumbnail')
+                    $('#banner').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            })
+
+            $('#process').click(() => {
+                $('.buttons').hide()
+                $('.loader').show()
+                $('#title').html("Processing...")
+                let image = $('#image').prop('files')[0]
+                var data = image['name'];
+
+                console.log(data)
+                $.ajax({
+                    url: "http://127.0.0.1:8000/api/",
+                    type: "POST",
+                    dataType: 'json',
+                    data: {
+                        image: data,
+                        csrfmiddlewaretoken: '{{ csrf_token }}'
+                    },
+                    success: function (xhr) {
+                        alert("Error while processing")
+                    },
+                    error: function (xhr) {
+                        $('#title').html("Result")
+                        let result = (xhr.responseText).split("-");
+                        let disease = result[0];
+                        let accuracy = result[1];
+                        $('.loader').hide()
+                        $('#disease').html("Result: " + disease)
+                        $('#accuracy').html("Accuracy: " + parseInt(accuracy).toFixed(2) + "%")
+                        $('#graph').attr('src', '{% static "graph.png" %}')
+                        $('.result').show()
+                    }
+                })
+            })
+        })
+    </script>
+
+
+    <!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
+</body>
+</html>
