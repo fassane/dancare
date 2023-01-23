@@ -19,6 +19,10 @@ from diab_retina_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.display),
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
+    path('demo/', views.demo, name='demo'),
+    path('fonction/', views.fonction, name='fonction'),
     path('api/', views.process_image)
+
 ]
