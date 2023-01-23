@@ -1,5 +1,5 @@
 
-# Dancare Diabetic Retinopathy detect
+# Dancare, detection de la Rétinopathie Diabétique
 ![HeaderImage](github_images/logo.png) 
 
 
