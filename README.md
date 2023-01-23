@@ -27,22 +27,22 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
 
 ### Acceuil | Inteface prinpale
 <p align = "left" >
-  <img width="250" height="500" src="github_images/ ">
-  <img width="250" height="500"  src="github_images/ "> 
-  <img width="250" height="500" src="github_images/ "> 
+  <img width="250" height="250" src="github_images/ ">
+  <img width="250" height="250"  src="github_images/ "> 
+  <img width="250" height="250" src="github_images/ "> 
 </p>
 
 ### Fonctionnalités | Procédures
 <p align = "left" >
-  <img width="250" height="500" src="github_images/ ">
-  <img width="250" height="500"  src="github_images/ "> 
-  <img width="250" height="500" src="github_images/ "> 
+  <img width="250" height="250" src="github_images/ ">
+  <img width="250" height="250"  src="github_images/ "> 
+  <img width="250" height="250" src="github_images/ "> 
 </p>
 
 ### A propos | Tout 
 <p align = "left" >
-  <img width="250" height="500" src="github_images/prechat.jpeg">
-  <img width="250" height="500"  src="github_images/chat.jpeg"> 
+  <img width="250" height="250" src="github_images/prechat.jpeg">
+  <img width="250" height="250"  src="github_images/chat.jpeg"> 
 </p>
 
 
@@ -78,13 +78,7 @@ $ source venv/bin/activate
 $ pip install pip --upgrade
 $ pip intall setuptools --upgrade
 $ pip install django
-$ pip install tensorflow
-$ pip install pillow || pip install PIL
-$ pip install numpy
-$ pip install torch
-$ pip install torchvision
-$ pip install matplolib
-$ pip install keras
+$ pip install -r requirements.txt
 ```
 
 #### Configuration a faire
@@ -118,12 +112,12 @@ Toutefois, nous vous conseillons d'utiliser les images du dossier
 
 
 
-## Aide mot de fin
+## Mot de fin
 
-#### Apports et open source
-
+#### Apports
 `Vous etes libre de télécharger le projet et le modifier comme bon vous semble`
 
-Pour toute aide, joigner nous sur `fassanebolly@gmail.com` ou encore sur
+#### Aide
+Vous pouvez nous joindre via `fassanebolly@gmail.com` ou encore via
 `ludvlavonou@gmail.com`
 
