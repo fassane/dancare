@@ -1,0 +1,77 @@
+// ------------ variables ---------------
+$primary-color: #5BA21C; 
+$secondary-color: #12B886; //from evaneos
+$third-color: #005C56; //from evaneos
+$border-radius: 10px;
+$header-items-hover-color: #efefef;
+$text-color: #343a40;
+// ------------ variables ---------------
+
+.demo {
+    position: relative;
+}
+
+.test {
+
+    .container {
+
+        .top_title {
+            margin: 0;
+            padding: 0 50px;
+            text-align: center;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+            .second_color {
+                color: $secondary-color;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .col {
+                padding: 15px;
+                border-radius: $border-radius;
+                border: 1px solid #cecece;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            }
+            
+            .image_container {
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .select_image_container {
+                padding: 120px 40px;
+
+                .card_header {
+                    h5 {
+                        margin: 0;
+                        font-size: 1.7em;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .btn {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+@keyframes toptobottom {
+    0% {top: -30px}
+    100% {top: 30px}
+}

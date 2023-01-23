@@ -1,0 +1,197 @@
+// ------------ variables ---------------
+$primary-color: #5BA21C; 
+$secondary-color: #12B886; //from evaneos
+$third-color: #005C56; //from evaneos
+$border-radius: 10px;
+$header-items-hover-color: #efefef;
+$text-color: #343a40;
+// ------------ variables ---------------
+
+.banner {
+    background-image: url('../images/home/banner-cover.jpg');
+    // padding-bottom: 100px;
+    // border-bottom-right-radius: 3.5rem;
+    // border-bottom-left-radius: 3.5rem;
+
+    .hero_content {
+        padding: 30px 0;
+    }
+
+    .title {
+        margin: 0;
+        color: #fff;
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    .do_test {
+        padding: 8px 15px;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        transition: 0.3s ease;
+        background-color: $secondary-color;
+    }
+    .do_test:hover {
+        background-color: $secondary-color;
+    }
+
+    .more {
+        color: $text-color;
+        display: flex;
+        font-size: 1.2em;
+        // border: 1px solid #111;
+        
+        span {
+            margin-right: 10px;
+            font-weight: 700;
+        }
+        span:hover {
+            color: #fff;
+        }
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+        .arrow_container {
+            border: 1px solid transparent;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    }
+    
+}
+
+.stage {
+
+    .container {
+
+        .app_title {
+            margin-bottom: 25px;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            
+            .col {
+                padding: 0 0 15px 0;
+                background-color: #fff;
+                width: 25%;
+                // border: 1px solid #111;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-radius: $border-radius;
+                transition: 0.5s ease;
+                cursor: pointer;
+
+                img {
+                    width: 250px;
+                    height: 230px;
+                }
+
+                .name {
+                    font-size: 1.2em;
+                    margin-top: 10px;
+                    font-weight: 600;
+                }
+            }
+            .col:hover {
+                transform: scale(0.92);
+                .name {
+                    color: $secondary-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.popular {
+    background-color: #fff;
+
+    .row {
+        display: flex;
+
+        .left {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-left: 40px;
+        }
+        
+        .doctor_image {
+            width: 600px;
+            height: 500px;
+            background-image: url('../images/home/doctors.svg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+.thematic {
+
+    .container {
+
+        .app_title {
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+
+            .col {
+                width: 33.33%;
+                padding: 30px;
+                background-image: url('../images/home/pattern.jpg');
+                transition: 0.5s ease;
+                position: relative;
+                top: 0;
+                cursor: pointer;
+                
+                .bg_white {
+                    padding: 140px 20px;
+                    text-align: center;
+                }
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+                .name {
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+            }
+            .col:hover {
+                top: -15px;
+                .name {
+                    color: #12B886;
+                }
+            }
+        }        
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $text-color;
+        margin-top: 20px;
+    }
+}
+
