@@ -6,111 +6,124 @@
 ## Introduction
 Détection de la Rétinopathie Diabétique en utilisant le deep learning
 
-Testé sur Google Chrome version 109.0.5414.74
 
 
-## Technology and Architecture
-Pyhton, Django, Tensorflow, Keras, Werkzug
+## Technologies and Architecture
+Pyhton, Django, Tensorflow, Keras, PyTorch
 
 
-## Fonctionnalites
+## Contenu
 
-**Page d'acceuil:** Splash, Login, Register
+**Page d'acceuil:** Presentation, 
 
-**Home Screen:** App operations that can do
+**Page Fonctionnalités:** Modèles de données
 
-**Exchange Screen:** List of crypto exhanges
+**Page à propos:** Tout sur la plateforme
 
-**Portofolio Screen:** Information of user, Button to show portofolio
+**Page Demo et Test:** Démo de la solution
 
-**Chatbot Screen:** Chat with Dia bot, 
 
 ## Captures d'écran
 
-### Page d'acceuil | Inteface prinpale
+### Acceuil | Inteface prinpale
 <p align = "left" >
   <img width="250" height="500" src="github_images/ ">
   <img width="250" height="500"  src="github_images/ "> 
   <img width="250" height="500" src="github_images/ "> 
 </p>
 
-### Home | Exchange | Portofolio
+### Fonctionnalités | Procédures
 <p align = "left" >
   <img width="250" height="500" src="github_images/ ">
   <img width="250" height="500"  src="github_images/ "> 
   <img width="250" height="500" src="github_images/ "> 
 </p>
 
-### Chatbot | Chat
+### A propos | Tout 
 <p align = "left" >
   <img width="250" height="500" src="github_images/prechat.jpeg">
   <img width="250" height="500"  src="github_images/chat.jpeg"> 
 </p>
 
-### Choose image | Solde
-<p align = "left" >
-  <img width="250" height="500" src="github_images/chooseimg.jpg">
-  <img width="250" height="500"  src="github_images/solde.jpg"> 
-</p>
 
-## Setup
 
-#### Requirements
-* Basic knowledge about ES6.
-* Basic knowledge about JavaScript.
-* Basic knowledge about React Native.
-* Basic knowledge about Android and Android Studio.
-* Android SDK Tools 23.0.5 or higher.
-* Android version >= 5.0 (API level 21).
+## Préréquis
 
-#### Project
-1. Download or clone and open with e.g Visual Studio Code.
-2. Make sur you have an emulator or a phone connected.
-3. In your terminal:
-    * If you have react-native cli installed globally, run `react-native run-android`
-    * If you don't have it installed, run `npx react-native run-android`
+* Connaissance basique de Python.
+* Connaissance basique de Django.
+* Connaissance basique de Sass.
+* Connaissance basique des modeles CNN .
+* Connaissance basique de Tensorflow.
 
-## Help
-If needed reach me on fassanebolly@gmail.com
 
-Instructions to be followed
---------------------------------------------------
 
-Install the below required packages:
+## Mise en place
 
-django - (pip install django)
-tensorflow - (pip install tensorflow)
-pillow - (pip install pillow || pip install PIL)
-numpy (pip install numpy)
+### Suivre les étapes suivantes
 
-===================================================
+#### Cloner le projet
+```
+$ git clone https://github.com/fassane/dancare
+```
 
-Configuration to be made:
+#### Mettre en l'environnement virtuel
+```
+$ cd dancare
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
 
-Inside diabetic_retinopathy -> settings.py at last you have to put your local path to output directory currently it is my local path 
+#### Installation des libraires
+```
+$ pip install pip --upgrade
+$ pip intall setuptools --upgrade
+$ pip install django
+$ pip install tensorflow
+$ pip install pillow || pip install PIL
+$ pip install numpy
+$ pip install torch
+$ pip install torchvision
+$ pip install matplolib
+$ pip install keras
+```
 
-===================================================
+#### Configuration a faire
 
-Note: 
+A la fin du fichier `diabetic_retinopathy/settings.py` vous devez changer le
+chemin du fichier.
 
-Currently the models have been trained using tesnsorflow keras you can find the models inside diab_retina_app -> model folder
 
-===================================================
+#### Important
 
-To execute the project run the below command:
+Présentement, les modèles ont été entrainé depuis les données de la compétiton
+ATPOS disponible sur *kaggle* via le lien https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Aussi a l'aide de **Tensorflow**. 
+Vous pouvez trouver ces modèles dans le dossier `diab_retina_app/model`.
 
-python manage.py runserver
 
-===================================================
+#### Visualisation de la plateforme
+```
+$ python manage.py runserver
+$ python manage.py runserver 2100 (pour tourner sur le port 2400)
+```
+Aller dans votre navigateur et taper `localhost:8000` ou `localhost:2100` selon
+ce que vous avez entez
 
-Input:
 
-choose the test image from the test directory given inside the project ie; diab_retina_app->test
-Training images are not included in the folder since it's a large collection 
-The same images you have sent have been used for training
+#### Utilisation
 
-===================================================
+Aller a la page de démo, téléverser une image d'oeil saine ou suceptible de
+contenir des sequelles de *réthinopathie diabétique* et procéder au test.
+Toutefois, nous vous conseillons d'utiliser les images du dossier 
+`diab_retina_app/test`
 
-You are free to edit the front-end/processing logic as per your need
 
-===================================================
+
+## Aide mot de fin
+
+#### Apports et open source
+
+`Vous etes libre de télécharger le projet et le modifier comme bon vous semble`
+
+Pour toute aide, joigner nous sur `fassanebolly@gmail.com` ou encore sur
+`ludvlavonou@gmail.com`
+
