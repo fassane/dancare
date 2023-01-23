@@ -1,0 +1,153 @@
+.banner {
+  background-image: url("../images/home/banner-cover.jpg");
+}
+.banner .hero_content {
+  padding: 30px 0;
+}
+.banner .title {
+  margin: 0;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.banner .subtitle {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.banner .do_test {
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+  background-color: #12B886;
+}
+.banner .do_test:hover {
+  background-color: #12B886;
+}
+.banner .more {
+  color: #343a40;
+  display: flex;
+  font-size: 1.2em;
+}
+.banner .more span {
+  margin-right: 10px;
+  font-weight: 700;
+}
+.banner .more span:hover {
+  color: #fff;
+}
+.banner .more svg {
+  width: 25px;
+  height: 25px;
+}
+.banner .more .arrow_container {
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.stage .container .app_title {
+  margin-bottom: 25px;
+}
+.stage .container .content {
+  display: flex;
+  gap: 20px;
+}
+.stage .container .content .col {
+  padding: 0 0 15px 0;
+  background-color: #fff;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.stage .container .content .col img {
+  width: 250px;
+  height: 230px;
+}
+.stage .container .content .col .name {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.stage .container .content .col:hover {
+  transform: scale(0.92);
+}
+.stage .container .content .col:hover .name {
+  color: #12B886;
+  text-decoration: underline;
+}
+
+.popular {
+  background-color: #fff;
+}
+.popular .row {
+  display: flex;
+}
+.popular .row .left {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.popular .row .doctor_image {
+  width: 600px;
+  height: 500px;
+  background-image: url("../images/home/doctors.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thematic .container .app_title {
+  margin-bottom: 30px;
+}
+.thematic .container .content {
+  display: flex;
+  gap: 40px;
+}
+.thematic .container .content .col {
+  width: 33.33%;
+  padding: 30px;
+  background-image: url("../images/home/pattern.jpg");
+  transition: 0.5s ease;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+}
+.thematic .container .content .col .bg_white {
+  padding: 140px 20px;
+  text-align: center;
+}
+.thematic .container .content .col img {
+  width: 80px;
+  height: 80px;
+}
+.thematic .container .content .col .name {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.thematic .container .content .col:hover {
+  top: -15px;
+}
+.thematic .container .content .col:hover .name {
+  color: #12B886;
+}
+.thematic .title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

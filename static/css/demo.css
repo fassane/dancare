@@ -1,0 +1,56 @@
+.demo {
+  position: relative;
+}
+
+.test .container .top_title {
+  margin: 0;
+  padding: 0 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.test .container .top_title .second_color {
+  color: #12B886;
+}
+.test .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.test .container .row .col {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cecece;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.test .container .row .image_container img {
+  width: 400px;
+  height: 400px;
+}
+.test .container .row .card {
+  display: flex;
+  flex-direction: column;
+}
+.test .container .row .select_image_container {
+  padding: 120px 40px;
+}
+.test .container .row .select_image_container .card_header h5 {
+  margin: 0;
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+.test .container .row .select_image_container .btn {
+  background-color: #12B886;
+}
+
+@keyframes toptobottom {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/*# sourceMappingURL=demo.css.map */
