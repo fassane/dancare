@@ -62,18 +62,18 @@ def process_img(img):
     print(height)
 
     print(new_height)
-    tick_label = ['no_dir', 'mild', 'moderate', 'sever', 'proliferative']
+    tick_label = ['normal', 'légère', 'modérée', 'sévère', 'proliférante']
 
     # plotting a bar chart
     plt.bar(left, new_height, tick_label=tick_label,
             width=0.8, color=['red', 'green'])
 
     # naming the x-axis
-    plt.xlabel('x - axis')
+    plt.xlabel('x - les différents stades')
     # naming the y-axis
-    plt.ylabel('y - axis')
+    plt.ylabel('y - Echelle de gravité')
     # plot title
-    plt.title('Diabetic Retinopathy')
+    plt.title('Détection de la Réthinopathie Diabétique')
 
     # function to show the plot
     plt.savefig(os.path.dirname(__file__) + '/output/graph.png')
