@@ -1,0 +1,99 @@
+$primary-color: #5BA21C; 
+$secondary-color: #12B886; //from evaneos
+$third-color: #005C56; //from evaneos
+$border-radius: 10px;
+$header-items-hover-color: #efefef;
+$text-color: #343a40;
+
+.concept, .makers {
+    .title {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+.motivation {
+    
+    .content {
+        padding: 3rem 20px; 
+        font-size: 1.2em;
+        border-radius: $border-radius;
+        box-shadow: 8px -8px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.7s ease;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 30px;
+
+        .image_faq {
+            padding: 150px 0;
+            background-image: url('../images/about/portfolio.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: $border-radius;
+            border: 1px solid #efefef;
+        }
+
+        .text {
+            padding: 100px 0 0 0;
+            text-align: justify;
+            
+        }
+    }
+    .content:hover {
+        transform: scale(0.95);
+        strong {
+            color: $secondary-color;
+        }
+    }
+}
+
+.makers {
+
+    .makers_people {
+        padding: 1rem 3rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .col {
+            padding: 15px;
+            border-radius: $border-radius;
+            position: relative;
+            top: 0;
+            cursor: pointer;
+            transition: 0.7s ease;
+
+            .name {
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: 600;
+                color: $secondary-color;
+                margin-top: 15px;
+            }
+        }
+        .col:hover {
+            top: -20px;
+            box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image_boy, .image_girl {
+            padding: 100px 100px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: $border-radius;
+            border: 1px solid #efefef;
+        }
+        .image_girl {
+            background-image: url('../images/about/user.svg');
+        }
+        .image_boy {
+            background-image: url('../images/about/user.svg');
+
+        }
+    }
+}

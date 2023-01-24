@@ -20,7 +20,7 @@ $text-color: #343a40;
     .title {
         margin: 0;
         color: #fff;
-        font-size: 3.2rem;
+        font-size: 4rem;
         font-weight: 700;
         margin-bottom: 15px;
     }
@@ -47,14 +47,17 @@ $text-color: #343a40;
         color: $text-color;
         display: flex;
         font-size: 1.2em;
-        // border: 1px solid #111;
+        width: 240px;
+        padding: 6px 10px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease;
         
         span {
             margin-right: 10px;
             font-weight: 700;
-        }
-        span:hover {
-            color: #fff;
         }
         svg {
             width: 25px;
@@ -67,6 +70,9 @@ $text-color: #343a40;
             background-color: #fff;
         }
     }
+    .more:hover {
+        background-color: #fff;
+    }
     
 }
 
@@ -74,24 +80,22 @@ $text-color: #343a40;
 
     .container {
 
-        .app_title {
-            margin-bottom: 25px;
-        }
+        // 
 
         .content {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             
             .col {
                 padding: 0 0 15px 0;
                 background-color: #fff;
-                width: 25%;
-                // border: 1px solid #111;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 border-radius: $border-radius;
                 transition: 0.5s ease;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
                 cursor: pointer;
 
                 img {
@@ -102,7 +106,6 @@ $text-color: #343a40;
                 .name {
                     font-size: 1.2em;
                     margin-top: 10px;
-                    font-weight: 600;
                 }
             }
             .col:hover {
@@ -110,6 +113,7 @@ $text-color: #343a40;
                 .name {
                     color: $secondary-color;
                     text-decoration: underline;
+                    font-weight: 600;
                 }
             }
         }
@@ -120,7 +124,8 @@ $text-color: #343a40;
     background-color: #fff;
 
     .row {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 
         .left {
             display: flex;
@@ -131,8 +136,7 @@ $text-color: #343a40;
         }
         
         .doctor_image {
-            width: 600px;
-            height: 500px;
+            padding: 225px 0;
             background-image: url('../images/home/doctors.svg');
             background-position: center center;
             background-size: cover;
@@ -151,11 +155,11 @@ $text-color: #343a40;
         }
 
         .content {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 40px;
 
             .col {
-                width: 33.33%;
                 padding: 30px;
                 background-image: url('../images/home/pattern.jpg');
                 transition: 0.5s ease;
@@ -172,6 +176,7 @@ $text-color: #343a40;
                     height: 80px;
                 }
                 .name {
+                    padding: 0 30px;
                     font-size: 1.2em;
                     font-weight: 600;
                     margin-top: 10px;

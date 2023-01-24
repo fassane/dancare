@@ -7,7 +7,7 @@
 .banner .title {
   margin: 0;
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -31,13 +31,17 @@
   color: #343a40;
   display: flex;
   font-size: 1.2em;
+  width: 240px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
 }
 .banner .more span {
   margin-right: 10px;
   font-weight: 700;
-}
-.banner .more span:hover {
-  color: #fff;
 }
 .banner .more svg {
   width: 25px;
@@ -49,23 +53,24 @@
   border-radius: 50%;
   background-color: #fff;
 }
-
-.stage .container .app_title {
-  margin-bottom: 25px;
+.banner .more:hover {
+  background-color: #fff;
 }
+
 .stage .container .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 .stage .container .content .col {
   padding: 0 0 15px 0;
   background-color: #fff;
-  width: 25%;
   display: flex;
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
   transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 .stage .container .content .col img {
@@ -75,7 +80,6 @@
 .stage .container .content .col .name {
   font-size: 1.2em;
   margin-top: 10px;
-  font-weight: 600;
 }
 .stage .container .content .col:hover {
   transform: scale(0.92);
@@ -83,13 +87,15 @@
 .stage .container .content .col:hover .name {
   color: #12B886;
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .popular {
   background-color: #fff;
 }
 .popular .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
 }
 .popular .row .left {
   display: flex;
@@ -99,8 +105,7 @@
   margin-left: 40px;
 }
 .popular .row .doctor_image {
-  width: 600px;
-  height: 500px;
+  padding: 225px 0;
   background-image: url("../images/home/doctors.svg");
   background-position: center center;
   background-size: cover;
@@ -111,11 +116,11 @@
   margin-bottom: 30px;
 }
 .thematic .container .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 40px;
 }
 .thematic .container .content .col {
-  width: 33.33%;
   padding: 30px;
   background-image: url("../images/home/pattern.jpg");
   transition: 0.5s ease;
@@ -132,6 +137,7 @@
   height: 80px;
 }
 .thematic .container .content .col .name {
+  padding: 0 30px;
   font-size: 1.2em;
   font-weight: 600;
   margin-top: 10px;

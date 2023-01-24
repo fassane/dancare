@@ -1,0 +1,79 @@
+.concept .title, .makers .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.motivation .content {
+  padding: 3rem 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 8px -8px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.7s ease;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.motivation .content .image_faq {
+  padding: 150px 0;
+  background-image: url("../images/about/portfolio.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+}
+.motivation .content .text {
+  padding: 100px 0 0 0;
+  text-align: justify;
+}
+.motivation .content:hover {
+  transform: scale(0.95);
+}
+.motivation .content:hover strong {
+  color: #12B886;
+}
+
+.makers .makers_people {
+  padding: 1rem 3rem;
+}
+.makers .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.makers .content .col {
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+.makers .content .col .name {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #12B886;
+  margin-top: 15px;
+}
+.makers .content .col:hover {
+  top: -20px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.makers .content .image_boy, .makers .content .image_girl {
+  padding: 100px 100px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+}
+.makers .content .image_girl {
+  background-image: url("../images/about/user.svg");
+}
+.makers .content .image_boy {
+  background-image: url("../images/about/user.svg");
+}
+
+/*# sourceMappingURL=about.css.map */
