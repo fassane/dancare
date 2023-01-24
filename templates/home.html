@@ -6,10 +6,10 @@
 
 {% block content %}
     <!-- banner -->
-    <div class="banner banner_section cover_background">
+    <div class="banner banner_section cover_background" id="do_test">
         <div class="hero_content ">
             <div class="container ">
-                <div class="row">
+                <!-- <div class="row"> -->
                     <h1 class="title">
                         Dancare, le futur
                     </h1>
@@ -18,57 +18,70 @@
                         Diabétique, à l'aide d'images entrainés par un modèle 
                         CNN
                     </div>
-                    <a href="{% url 'demo' %}" class="link more">
+                    <a href="{% url 'demo' %}" class="link more" >
                         <span>Faire le test maintenant</span>
                         <svg class="arrow_container">
                             <use xlink:href="#arrow_right" ></use>
                         </svg>
                     </a>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
     <!-- banner -->
-    <!-- rd stage section -->
-    <section class="stage page_section_big_padding">
+    <!-- what is -->
+    <section class="whatis page_section_medium_padding">
         <div class="container">
-            <div class="app_title">
-                Stages de la Rétinopathie Diabétique
-            </div>
-            <div class="content">
-                <div class="col">
-                    <div class="img_container">
-                        <img src="../static/images/home/mild-npdr.png" alt="mild" srcset="">
+            <!-- <div class="row"> -->
+                <div class="app_title">
+                    C'est quoi, la Réthinopathie Diabétique ?
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- what is -->
+    <!-- rd stage section -->
+    <section class="stage page_section_big_padding" id="four_stades">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="app_title">
+                    Les différents stages
+                </div>
+                <div class="content">
+                    <div class="col">
+                        <div class="img_container">
+                            <img src="../static/images/home/mild-npdr.png" alt="mild" srcset="">
+                        </div>
+                        <div class="name">
+                            rétinopathie diabétique non proliférative légère
+                        </div>
                     </div>
-                    <div class="name">
-                        rétinopathie diabétique non proliférative légère
+                    <div class="col">
+                        <div class="img_container">
+                            <img src="../static/images/home/mod-npdr.png" alt="mod" srcset="">
+                        </div>
+                        <div class="name">
+                            Rétinopathie diabétique non proliférative modérée
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_container">
+                            <img src="../static/images/home/severe-npdr.png" alt="severe" srcset="">
+                        </div>
+                        <div class="name">
+                            rétinopathie diabétique non proliférative sévère
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img_container">
+                            <img src="../static/images/home/severe-npdr.png" alt="pro" srcset="">
+                        </div>
+                        <div class="name">
+                            rétinopathie diabétique proliférante
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="img_container">
-                        <img src="../static/images/home/mod-npdr.png" alt="mod" srcset="">
-                    </div>
-                    <div class="name">
-                        Rétinopathie diabétique non proliférative modérée
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="img_container">
-                        <img src="../static/images/home/severe-npdr.png" alt="severe" srcset="">
-                    </div>
-                    <div class="name">
-                        rétinopathie diabétique non proliférative sévère
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="img_container">
-                        <img src="../static/images/home/severe-npdr.png" alt="pro" srcset="">
-                    </div>
-                    <div class="name">
-                        rétinopathie diabétique proliférante
-                    </div>
-                </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
     <!-- rd stage section -->
@@ -77,7 +90,9 @@
         <div class="container ">
             <div class="row">
                 <div class="left">
-                    Dancare, avis de médécins compétants
+                    <div class="app_title">
+                        Dancare, avis de médécins compétants
+                    </div>
                 </div>
                <div class="right doctor_image"></div>
             </div>
@@ -89,14 +104,14 @@
     <section class="thematic page_section_medium_padding">
         <div class="container">
             <div class="app_title">
-                Nos thematiques, concepts
+                Nos thématiques, concepts
             </div>
             <div class="content">
                 <div class="col">
                     <div class="bg_white">
                         <img src="../static/images/home/graph.svg" alt="graph" srcset="">
                         <div class="name">
-                            Coopérative
+                            Recherche et Coopération
                         </div>
                     </div>
                 </div>
@@ -104,7 +119,7 @@
                     <div class="bg_white">
                         <img src="../static/images/home/idea.svg" alt="idea" srcset="">
                         <div class="name">
-                            Brillante
+                            Des idées brillantes
                         </div>
                     </div>
                 </div>
@@ -112,7 +127,7 @@
                     <div class="bg_white">
                         <img src="../static/images/home/layout.svg" alt="layout" srcset="">
                         <div class="name">
-                            Mutli-plateforme
+                            Une solution mutli-plateforme
                         </div>
                     </div>
                 </div>

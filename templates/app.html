@@ -96,14 +96,14 @@
                     <div class="util_links">
                         <h3>Liens utiles</h3>
                         <a class="link" href="#"><p>Rétinopathie</p></a>
-                        <a class="link" href="#"><p>Les 4 stades</p></a>
-                        <a class="link" href="#"><p>Faire le test</p></a>
+                        <a class="link" href="/#four_stades"><p>Les 4 stades</p></a>
+                        <a class="link" href="/#do_test"><p>Faire le test</p></a>
                     </div>
                     <div class="about">
                         <h3>A propos</h3>
-                        <a class="link" href="#"><p>Concepteurs</p></a>
-                        <a class="link" href="#"><p>Tout savoir sur l'app</p></a>
-                        <a class="link" href="#"><p>Perspectives</p></a>
+                        <a class="link" href="/about#makers"><p>Concepteurs</p></a>
+                        <a class="link" href="{% url 'about' %}"><p>Tout savoir sur l'app</p></a>
+                        <a class="link" href="/about#motivation"><p>Perspectives</p></a>
                     </div>
                     <div class="fonction">
                         <h3>Fonctionalités</h3>
@@ -205,27 +205,5 @@
         })
     </script>
 
-
-    <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration -->
 </body>
 </html>
