@@ -27,23 +27,23 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
 
 ### Acceuil | Inteface prinpale
 <p align = "left" >
-  <img width="350" height="250" src="github_images/home-1.png">
-  <img width="350" height="250"  src="github_images/home-2.png"> 
-  <img width="350" height="250" src="github_images/home-3.png"> 
-  <img width="350" height="250" src="github_images/home-4.png"> 
+  <img width="350" height="215" src="github_images/home-1.png">
+  <img width="350" height="215"  src="github_images/home-2.png"> 
+  <img width="350" height="215" src="github_images/home-3.png"> 
+  <img width="350" height="215" src="github_images/home-4.png"> 
 </p>
 
 ### Fonctionnalités | Procédures
 <p align = "left" >
-  <img width="250" height="250" src="github_images/ ">
-  <img width="250" height="250"  src="github_images/ "> 
-  <img width="250" height="250" src="github_images/ "> 
+  <img width="250" height="215" src="github_images/ ">
+  <img width="250" height="215"  src="github_images/ "> 
+  <img width="250" height="215" src="github_images/ "> 
 </p>
 
 ### A propos | Tout 
 <p align = "left" >
-  <img width="250" height="250" src="github_images/prechat.jpeg">
-  <img width="250" height="250"  src="github_images/chat.jpeg"> 
+  <img width="250" height="215" src="github_images/prechat.jpeg">
+  <img width="250" height="215"  src="github_images/chat.jpeg"> 
 </p>
 
 
