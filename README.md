@@ -81,11 +81,6 @@ $ pip install django
 $ pip install -r requirements.txt
 ```
 
-#### Configuration à faire
-
-A la fin du fichier `diabetic_retinopathy/settings.py` vous devez changer le
-chemin du fichier selon vous.
-
 
 #### Important
 
