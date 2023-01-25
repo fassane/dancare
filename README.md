@@ -27,9 +27,10 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
 
 ### Acceuil | Inteface prinpale
 <p align = "left" >
-  <img width="250" height="250" src="github_images/ ">
-  <img width="250" height="250"  src="github_images/ "> 
-  <img width="250" height="250" src="github_images/ "> 
+  <img width="300" height="250" src="github_images/home-1.png">
+  <img width="300" height="250"  src="github_images/home-2.png"> 
+  <img width="300" height="250" src="github_images/home-3.png"> 
+  <img width="300" height="250" src="github_images/home-4.png"> 
 </p>
 
 ### Fonctionnalités | Procédures
