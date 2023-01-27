@@ -1,3 +1,4 @@
+/*#5BA21C; */
 .demo {
   position: relative;
 }
@@ -11,7 +12,7 @@
   margin-bottom: 40px;
 }
 .test .container .top_title .second_color {
-  color: #12B886;
+  color: #ED776B;
 }
 .test .container .row {
   display: flex;
@@ -41,7 +42,7 @@
   margin-bottom: 30px;
 }
 .test .container .row .select_image_container .btn {
-  background-color: #12B886;
+  background-color: #ED776B;
 }
 
 @keyframes toptobottom {

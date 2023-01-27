@@ -1,3 +1,4 @@
+/*#5BA21C; */
 .concept .title, .makers .title {
   font-size: 1.8rem;
   font-weight: 700;
@@ -30,9 +31,12 @@
   transform: scale(0.95);
 }
 .motivation .content:hover strong {
-  color: #12B886;
+  color: #ED776B;
 }
 
+.makers {
+  padding-top: 10px;
+}
 .makers .makers_people {
   padding: 1rem 3rem;
 }
@@ -40,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 .makers .content .col {
   padding: 15px;
@@ -54,12 +59,14 @@
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
-  color: #12B886;
   margin-top: 15px;
 }
 .makers .content .col:hover {
   top: -20px;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.makers .content .col:hover .name {
+  color: #ED776B;
 }
 .makers .content .image_boy, .makers .content .image_girl {
   padding: 100px 100px;
@@ -74,6 +81,17 @@
 }
 .makers .content .image_boy {
   background-image: url("../images/about/user.svg");
+}
+
+@media (max-width: 941px) {
+  .motivation .content .text {
+    padding: 30px 0 0 0;
+  }
+}
+@media (min-width: 942px) and (max-width: 1024px) {
+  .motivation .content .text {
+    padding: 50px 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

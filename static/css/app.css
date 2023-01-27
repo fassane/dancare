@@ -1,3 +1,4 @@
+/* #4464AD;  /*#5BA21C; */
 /* ------------ custom font --------------- */
 @font-face {
   font-family: "GT America";
@@ -75,6 +76,10 @@ body {
   width: 70%;
 }
 
+.w65 {
+  width: 65%;
+}
+
 .middle_width {
   width: 50%;
 }
@@ -86,7 +91,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 85%;
-  border: 1px solid red;
 }
 
 .row {
@@ -118,7 +122,7 @@ body {
 .app_title {
   position: relative;
   font-size: 2rem;
-  color: #343a40;
+  color: #1D1739;
   text-align: center;
   font-weight: 700;
   text-align: left;
@@ -130,14 +134,14 @@ body {
   position: absolute;
   bottom: -12px;
   left: 0;
-  width: 60px;
+  width: 70px;
   height: 4px;
-  background-color: #12B886;
+  background-color: #ED776B;
   margin-top: 10px;
 }
 
 .custom_banner {
-  background-color: #12B886;
+  background-image: linear-gradient(to bottom, #1D1739, #ED776B);
 }
 .custom_banner .title {
   font-size: 3.3rem;
@@ -196,7 +200,7 @@ header .headside .headside_right .button {
   padding: 6px 8px;
   margin: 0 5px;
   border-radius: 6px;
-  background-color: #12B886;
+  background-color: #ED776B;
   color: #fff;
   font-weight: 700;
 }
@@ -204,7 +208,7 @@ header .headside .headside_right .button {
 /* ------------ header --------------- */
 /* ------------ footer --------------- */
 footer {
-  background-color: #343a40;
+  background-image: linear-gradient(to top, #1D1739, #ED776B);
   padding-bottom: 10px;
 }
 footer .footer_links {
@@ -218,12 +222,17 @@ footer .footer_links .c_grid {
 }
 footer .footer_links .footer_title {
   font-weight: 700;
-  font-size: 2.8rem;
   grid-column-start: 1;
   grid-column-end: 6;
 }
 footer .footer_links .footer_title .title {
   color: #fff;
+  font-size: 2.8rem;
+}
+footer .footer_links .footer_title .subtitle {
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 footer .footer_links .util_links {
   grid-column-start: 8;

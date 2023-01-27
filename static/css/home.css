@@ -1,3 +1,4 @@
+/*#5BA21C; */
 .banner {
   background-image: url("../images/home/banner-cover.jpg");
 }
@@ -16,16 +17,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 35px;
-}
-.banner .do_test {
-  padding: 8px 15px;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  transition: 0.3s ease;
-  background-color: #12B886;
-}
-.banner .do_test:hover {
-  background-color: #12B886;
+  text-shadow: 1px 1px 2px #ED776B, 0 0 1em #4464AD, 0 0 0.2em #4464AD;
 }
 .banner .more {
   color: #343a40;
@@ -41,7 +33,9 @@
 }
 .banner .more span {
   margin-right: 10px;
+  color: #efefef;
   font-weight: 700;
+  text-shadow: 1px 1px 2px #ED776B, 0 0 1em #4464AD, 0 0 0.2em #4464AD;
 }
 .banner .more svg {
   width: 25px;
@@ -85,7 +79,7 @@
   transform: scale(0.92);
 }
 .stage .container .content .col:hover .name {
-  color: #12B886;
+  color: #ED776B;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -146,7 +140,7 @@
   top: -15px;
 }
 .thematic .container .content .col:hover .name {
-  color: #12B886;
+  color: #ED776B;
 }
 .thematic .title {
   text-align: center;
