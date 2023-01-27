@@ -217,7 +217,7 @@ footer .footer_links {
 }
 footer .footer_links .c_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(13, 1fr);
   column-gap: 15px;
 }
 footer .footer_links .footer_title {
