@@ -29,7 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
+  position: relative;
+  left: 0;
 }
 .banner .more span {
   margin-right: 10px;
@@ -42,13 +44,22 @@
   height: 25px;
 }
 .banner .more .arrow_container {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 5px;
   border-radius: 50%;
   background-color: #fff;
 }
 .banner .more:hover {
   background-color: #fff;
+  -webkit-animation: bounce 0.1s linear;
+  animation: bounce 0.1s linear;
+}
+.banner .more:hover span {
+  text-shadow: none;
+  color: #4464AD;
+}
+.banner .more:hover .arrow_container {
+  border-color: #4464AD;
 }
 
 .stage .container .content {
@@ -148,6 +159,18 @@
   font-weight: 700;
   color: #343a40;
   margin-top: 20px;
+}
+
+@keyframes bounce {
+  0% {
+    left: -30px;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 30px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
