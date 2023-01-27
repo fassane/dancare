@@ -1,5 +1,6 @@
-$primary-color: #5BA21C; 
-$secondary-color: #12B886; //from evaneos
+$primary-color: #4464AD;  /*#5BA21C; */
+// $secondary-color: #12B886; //from evaneos ; new color : #4464AD
+$secondary-color: #ED776B;
 $third-color: #005C56; //from evaneos
 $border-radius: 10px;
 $header-items-hover-color: #efefef;
@@ -49,6 +50,7 @@ $text-color: #343a40;
 }
 
 .makers {
+    padding-top: 10px;
 
     .makers_people {
         padding: 1rem 3rem;
@@ -58,7 +60,8 @@ $text-color: #343a40;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 25px;
+        flex-wrap: wrap;
 
         .col {
             padding: 15px;
@@ -72,13 +75,15 @@ $text-color: #343a40;
                 text-align: center;
                 font-size: 1.2em;
                 font-weight: 600;
-                color: $secondary-color;
                 margin-top: 15px;
             }
         }
         .col:hover {
             top: -20px;
             box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+            .name {
+                color: $secondary-color;
+            }
         }
         .image_boy, .image_girl {
             padding: 100px 100px;
@@ -94,6 +99,29 @@ $text-color: #343a40;
         .image_boy {
             background-image: url('../images/about/user.svg');
 
+        }
+    }
+}
+
+
+@media (max-width: 941px) {
+
+    .motivation {
+        .content {
+            .text {
+                padding: 30px 0 0 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 942px) and (max-width: 1024px) {
+
+    .motivation {
+        .content {
+            .text {
+                padding: 50px 0 0 0;
+            }
         }
     }
 }

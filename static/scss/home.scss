@@ -1,6 +1,7 @@
 // ------------ variables ---------------
-$primary-color: #5BA21C; 
-$secondary-color: #12B886; //from evaneos
+$primary-color: #4464AD;  /*#5BA21C; */
+// $secondary-color: #12B886; //from evaneos ; new color : #4464AD
+$secondary-color: #ED776B;
 $third-color: #005C56; //from evaneos
 $border-radius: 10px;
 $header-items-hover-color: #efefef;
@@ -30,17 +31,7 @@ $text-color: #343a40;
         font-size: 1.8rem;
         font-weight: 700;
         margin-bottom: 35px;
-    }
-
-    .do_test {
-        padding: 8px 15px;
-        border-radius: 15px;
-        font-size: 1.2rem;
-        transition: 0.3s ease;
-        background-color: $secondary-color;
-    }
-    .do_test:hover {
-        background-color: $secondary-color;
+        text-shadow: 1px 1px 2px #ED776B, 0 0 1em #4464AD, 0 0 0.2em #4464AD;
     }
 
     .more {
@@ -57,7 +48,9 @@ $text-color: #343a40;
         
         span {
             margin-right: 10px;
+            color: #efefef;
             font-weight: 700;
+            text-shadow: 1px 1px 2px #ED776B, 0 0 1em #4464AD, 0 0 0.2em #4464AD;
         }
         svg {
             width: 25px;
@@ -185,7 +178,7 @@ $text-color: #343a40;
             .col:hover {
                 top: -15px;
                 .name {
-                    color: #12B886;
+                    color: $secondary-color;
                 }
             }
         }        
