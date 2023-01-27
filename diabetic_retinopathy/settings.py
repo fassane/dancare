@@ -25,7 +25,9 @@ SECRET_KEY = 'z*qm$(e9k0wa--t!^ux(xn15vk$)h7c$%3%vflo^@_++bg&uw('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fassane.com'
+]
 
 
 # Application definition
