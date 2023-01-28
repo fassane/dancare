@@ -8,96 +8,157 @@
   <!-- demo banner -->
   <div class="custom_banner demo page_section_big_padding">
     <div class="container">
-      <div class="title">
-        Test et démonstration
-        <svg class="arrow_container">
-          <use xlink:href="#arrow_down"></use>
-        </svg>
-      </div>
+        <div class="title">
+            Test et démonstration
+            <svg class="arrow_container">
+                <use xlink:href="#arrow_down"></use>
+            </svg>
+        </div>
     </div>
   </div>
   <!-- demo banner -->
-  <!-- test setion -->
-  <section class="test page_section_big_padding">
+  <!-- directives -->
+  <section class="directives page_section_medium_padding">
     <div class="container">
-      <h2 class="top_title">
-        Assurer vous de sélectionner une image sur votre machine dans 
-        <span class="second_color">la section gauche</span>, et ensuite 
-        procéder au test <br/>Toufois nous vous conseillons d'utiliser 
-        les images du dossier 
-        <span class="second_color">diab_retina_app/test</span> 
-      </h2>
-
-      <div class="row">
-
-              <div class="col bg_white image_container">
-                  <img src="../static/images/demo/no-image.svg" id="banner" alt="select-img" >
-              </div>
-              <div class="col bg_white select_image_container">
-                  <div class="card p-4 hoverable">
-                      <div class="card_header">
-                          <h5>Téléverser une image d'oeil</h5>
-                      </div>
-                      <div class="card-body">
-                          <div class="row">
-                              <div class="buttons">
-                                  <button class="btn btn-indigo"><input type="file" id="image"/></button>
-                                  <button class="btn btn-indigo" id="process">Tester<i class="fas fa-cloud-upload-alt"></i>
-                                  </button>
-                              </div>
-      
-                              <div class="loader ml-5" style="display: none;">
-                                  <div class="spinner-grow text-primary" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-secondary" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-success" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-danger" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-warning" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-info" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-primary" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                                  <div class="spinner-grow text-secondary" role="status">
-                                      <span class="sr-only">Loading...</span>
-                                  </div>
-                              </div>
-      
-                              <div class="result" style="display: none;margin-left: 10%">
-                                  <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="disease"></p>
-                                  <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="accuracy"></p>
-                                  <p>
-                                      <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                      aria-controls="collapseExample">
-                                          View Graph <i class="fas fa-angle-down"></i>
-                                      </a>
-                                      <a href="/" class="ml-5">
-                                          Try again <i class="fas fa-sync"></i>
-                                      </a>
-                                  </p>
-                                  <div class="collapse" id="collapseExample">
-                                      <div class="card card-body">
-                                          <img id="graph" style="width: 350px">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-  
-          </div>
-      </div>
+        <!-- <div class="row"> -->
+            <div class="app_title">
+                Quelques directives
+            </div>
+            <div class="content bg_white">
+                <div class="content_title">
+                    Assurer vous de suivre les étapes suivantes 👇
+                </div>
+                <ul>
+                    <li>
+                        <svg>
+                            <use xlink:href="#eye" fill="#ED776B"></use>
+                        </svg>
+                        Choisir une image d'oeil à tester
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#eye" fill="#ED776B"></use>
+                        </svg>
+                        Nous vous conseillons ceux utilisés pour le test
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#eye" fill="#ED776B"></use>
+                        </svg>
+                        Présents dans le repertoire <span class="second_color">
+                        diab_retina_app/test</span> 
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#eye" fill="#ED776B"></use>
+                        </svg>
+                        Téléverser l'image à tester
+                    </li>
+                    <li>
+                        <svg>
+                            <use xlink:href="#eye" fill="#ED776B"></use>
+                        </svg>
+                        Cliquer sur <strong>procéder au test</strong> 
+                    </li>
+                </ul>
+            </div>
+        <!-- </div> -->
     </div>
   </section>
-  <!-- test setion -->
+  <!-- directives -->
+  <!-- mise en pratique -->
+  <section class="pratique page_section_medium_padding">
+    <div class="container">
+        <!-- <div class="row"> -->
+            <div class="app_title">
+                Mise en pratique
+            </div>
+            <div class="main_content bg_white">
+                <div class="content">
+                    
+                    <div class="col bg_white image_container">
+                        <img src="../static/images/demo/no-image.svg" id="banner" alt="select-img" >
+                    </div>
+
+                    <div class="col bg_white select_image_container">
+                        <div class="card">
+                            <div class="card_top">
+                                Cliquer pour téléverser une image d'oeil 👇 
+                            </div>
+                            <div class="card_center">
+                                <svg class="arrow_container">
+                                    <use xlink:href="#arrow_down"></use>
+                                </svg>
+                            </div>
+                            <div class="card_bottom">
+
+                                <div class="buttons">
+                                    <button class="btn "><input type="file" id="image"/></button>
+                                </div>
+
+                                <div class="loader ml-5" style="display: none;">
+                                    <div class="spinner-grow text-primary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-secondary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-success" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-danger" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-warning" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-info" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-primary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-secondary" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
+
+                                <div class="result" style="display: none;margin-left: 10%">
+                                    <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="disease"></p>
+                                    <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="accuracy"></p>
+                                    <p>
+                                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                            View Graph <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <a href="/" class="ml-5">
+                                            Try again <i class="fas fa-sync"></i>
+                                        </a>
+                                    </p>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <img id="graph" style="width: 350px">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button_container">
+                    <button class="btn test_button" id="process">
+                        Procéder au test
+                        <svg>
+                            <use xlink:href="#cloud" fill="#ED776B"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+        <!-- </div> -->
+    </div>
+  </section>
+  <!-- mise pratique -->
 {% endblock %}
