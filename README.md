@@ -111,7 +111,7 @@ Aller sur votre navigateur et taper `localhost:8000`, ou `adresse-ip:port` sur v
 
 - Aller à la page de démo 
 - Téléverser une image d'oeil saine ou douteuse 
-- Procéder au test
+- Procéder au test <br/>
 Cependant, nous vous conseillons d'utiliser les images du dossier 
 `diab_retina_app/test`
 
