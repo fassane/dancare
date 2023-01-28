@@ -93,14 +93,17 @@ $ pip install -r requirements.txt
 ### Important
 
 Présentement, les modèles ont été entrainé depuis les données de la compétiton
-ATPOS disponible sur *kaggle* via le lien https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Aussi à l'aide de **Tensorflow**. 
-Vous pouvez trouver ces modèles dans le dossier `diab_retina_app/model`.
+ATPOS sur kaggle https://www.kaggle.com/competitions/aptos2019-blindness-detection/data, Tensorflow également. 
+Trouver ce modèle résultant dans `diab_retina_app/model`.
 
 
 ### Visualisation de la plateforme
 ```
+$ python manage.py runserver
+ou
 $ python manage.py runserver 0.0.0.0:8000
-$ python manage.py runserver 0.0.0.0:2400 (sur le port 2400)
+ou
+$ python manage.py runserver 0.0.0.0:port
 ```
 Aller sur votre navigateur et taper `localhost:8000` ou `localhost:2100`, ou `adresse-ip:port` sur votre réseau local.
 
