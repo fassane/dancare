@@ -78,7 +78,7 @@ $ source venv/bin/activate
 $ cd dancare
 $ pip install virtualenv
 $ virtualenv venv
-$ source venv/Scripts/activate
+$ .\venv\Scripts\activate
 ```
 
 ### Installation des libraires
