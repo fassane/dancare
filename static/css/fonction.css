@@ -1,12 +1,14 @@
+/* #4464AD;  /*#5BA21C; */
 .models .container .content {
   padding: 20px 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.models .container .content .input, .models .container .content .reponse {
+  overflow: hidden;
 }
 .models .container .content .input {
   padding: 5px 0;
-}
-.models .container .content .input_img {
-  width: 1132px;
 }
 
 /*# sourceMappingURL=fonction.css.map */

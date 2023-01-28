@@ -1,3 +1,13 @@
+// ------------ variables ---------------
+$primary-color: #1D1739; /* #4464AD;  /*#5BA21C; */
+// $secondary-color: #12B886; //from evaneos
+$secondary-color: #ED776B;
+$third-color: #005C56; //from evaneos
+$border-radius: 10px;
+$header-items-hover-color: #efefef;
+$text-color: #343a40;
+// ------------ variables ---------------
+
 .models {
 
     .container {
@@ -5,17 +15,18 @@
         .content {
             padding: 20px 0;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: $border-radius;
 
+            .input, .reponse {
+                overflow: hidden;
+            }
+            
             .input {
                 padding: 5px 0;
             }
             
-            .reponse {
-
-            }
-
             .input_img {
-                width: 1132px;
+                // width: 1132px;
             }
     
         }

@@ -54,7 +54,7 @@ $text-color: #343a40;
 
 
 .pratique {
-    padding-top: 10px;
+    padding-top: 30px;
 
     .main_content {
         padding: 20px 15px 30px 15px;
@@ -165,69 +165,77 @@ $text-color: #343a40;
 }
 
 
+.loader_container {
+    position: absolute;
+    padding: 90px 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // border: 1px solid red;
 
+    .content {
+        position: relative;
+        height: 100%;
 
-.test {
-
-    .container {
-
-        .top_title {
-            margin: 0;
-            padding: 0 50px;
-            text-align: center;
-            font-size: 1.8rem;
-            text-align: center;
-            margin-bottom: 40px;
-            .second_color {
-                color: $secondary-color;
-            }
-        }
-
-        .row {
+        .loader_card {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 30px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-
-            .col {
-                padding: 15px;
-                border-radius: $border-radius;
-                border: 1px solid #cecece;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-            }
-            
-            .image_container {
-
-                img {
-                    width: 400px;
-                    height: 400px;
-                }
-            }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .select_image_container {
-                padding: 120px 40px;
-
-                .card_header {
-                    h5 {
-                        margin: 0;
-                        font-size: 1.7em;
-                        margin-bottom: 30px;
-                    }
-                }
-
-                .btn {
-                    background-color: $secondary-color;
-                }
-            }
+            border: 2px solid $secondary-color;
+        }
+        .loader_text {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .loader {
+            width: 0;
+            height: 0;
+            padding: 80px;
+            border-radius: 100px;
+            border: 10px solid $secondary-color;
+            border-bottom-color: transparent;
+            background-color: transparent;
+            position: relative;
+            -webkit-animation: loading .8s infinite linear;
+            animation: loading .8s infinite linear;
         }
     }
+    svg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        padding: 3px;
+        z-index: 300;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+    svg:hover {
+        border-color: #fff;
+    }
+
 }
+
 
 @keyframes toptobottom {
     0% {top: -30px}
     100% {top: 30px}
+}
+
+@keyframes loading {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }

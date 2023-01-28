@@ -39,7 +39,7 @@
 }
 
 .pratique {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .pratique .main_content {
   padding: 20px 15px 30px 15px;
@@ -132,46 +132,64 @@
   box-shadow: none;
 }
 
-.test .container .top_title {
-  margin: 0;
-  padding: 0 50px;
-  text-align: center;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 40px;
+.loader_container {
+  position: absolute;
+  padding: 90px 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.test .container .top_title .second_color {
-  color: #ED776B;
+.loader_container .content {
+  position: relative;
+  height: 100%;
 }
-.test .container .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.test .container .row .col {
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #cecece;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-.test .container .row .image_container img {
-  width: 400px;
-  height: 400px;
-}
-.test .container .row .card {
+.loader_container .content .loader_card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ED776B;
 }
-.test .container .row .select_image_container {
-  padding: 120px 40px;
+.loader_container .content .loader_text {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
-.test .container .row .select_image_container .card_header h5 {
-  margin: 0;
-  font-size: 1.7em;
-  margin-bottom: 30px;
+.loader_container .content .loader {
+  width: 0;
+  height: 0;
+  padding: 80px;
+  border-radius: 100px;
+  border: 10px solid #ED776B;
+  border-bottom-color: transparent;
+  background-color: transparent;
+  position: relative;
+  -webkit-animation: loading 0.8s infinite linear;
+  animation: loading 0.8s infinite linear;
 }
-.test .container .row .select_image_container .btn {
-  background-color: #ED776B;
+.loader_container svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 3px;
+  z-index: 300;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.loader_container svg:hover {
+  border-color: #fff;
 }
 
 @keyframes toptobottom {
@@ -180,6 +198,14 @@
   }
   100% {
     top: 30px;
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
