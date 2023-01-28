@@ -118,7 +118,7 @@ Toutefois, nous vous conseillons d'utiliser les images du dossier
 ## Aide et autres
 
 #### Open source
-Vous etes libre de télécharger le projet et le modifier comme bon vous semble
+Vous etes libre de télécharger le projet et de modifier la logique comme bon vous semble
 
 #### Aide
 Pour tout, `fassanebolly@gmail.com` ou encore via
