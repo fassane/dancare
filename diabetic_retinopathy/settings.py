@@ -26,7 +26,7 @@ SECRET_KEY = 'z*qm$(e9k0wa--t!^ux(xn15vk$)h7c$%3%vflo^@_++bg&uw('
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'fassane.com'
+    '*'
 ]
 
 
