@@ -27,31 +27,31 @@
 
 ### Acceuil | Inteface prinpale
 <p align = "left" >
-  <img width="350" height="215" src="github_images/home-1.png">
-  <img width="350" height="215"  src="github_images/home-2.png"> 
-  <img width="350" height="215" src="github_images/home-3.png"> 
-  <img width="350" height="215" src="github_images/home-4.png"> 
+  <img width="350" height="230" src="github_images/home-1.png">
+  <img width="350" height="230"  src="github_images/home-2.png"> 
+  <img width="350" height="230" src="github_images/home-3.png"> 
+  <img width="350" height="230" src="github_images/home-4.png"> 
 </p>
 
 ### Fonctionnalités | Procédures
 <p align = "left" >
-  <img width="350" height="215" src="github_images/fonction-1.png">
-  <img width="350" height="215"  src="github_images/fonction-2.png"> 
+  <img width="350" height="230" src="github_images/fonction-1.png">
+  <img width="350" height="230"  src="github_images/fonction-2.png"> 
 </p>
 
 ### A propos | Tout 
 <p align = "left" >
-  <img width="350" height="215" src="github_images/about-1.png"> 
+  <img width="350" height="230" src="github_images/about-1.png"> 
 </p>
 
 ### Demonstration 
 <p align = "left" >
-  <img width="350" height="215" src="github_images/demo-1.png">
-  <img width="350" height="215"  src="github_images/demo-2.png"> 
-  <img width="350" height="215"  src="github_images/demo-3.png"> 
-  <img width="350" height="215"  src="github_images/demo-4.png"> 
-  <img width="350" height="215"  src="github_images/demo-5.png"> 
-  <img width="350" height="215"  src="github_images/demo-6.png"> 
+  <img width="350" height="230" src="github_images/demo-1.png">
+  <img width="350" height="230"  src="github_images/demo-2.png"> 
+  <img width="350" height="230"  src="github_images/demo-3.png"> 
+  <img width="350" height="230"  src="github_images/demo-4.png"> 
+  <img width="350" height="230"  src="github_images/demo-5.png"> 
+  <img width="350" height="230"  src="github_images/demo-6.png"> 
 </p>
 
 
