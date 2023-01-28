@@ -4,12 +4,12 @@
 
 
 ## Introduction
-Dancare, une platefome de Détection de la Rétinopathie Diabétique en utilisant le deep learning.
+*Dancare*, une platefome de Détection de la Rétinopathie Diabétique en utilisant le deep learning.
 
 
 
 ## Technos utilisées
-**Python**, **Django**, **Tensorflow**, **Keras**, **PyTorch**, **Sass**, **JQuery**
+*Python*, *Django*, *Tensorflow*, *Keras*, *PyTorch*, *Sass*, *JQuery*
 
 
 ## Contenu
@@ -57,15 +57,6 @@ Dancare, une platefome de Détection de la Rétinopathie Diabétique en utilisan
 
 
 
-## Préréquis
-
-* Connaissance basique de Python.
-* Connaissance basique de Django.
-* Connaissance basique de Sass.
-* Connaissance basique des modeles CNN .
-* Connaissance basique de Tensorflow.
-
-
 
 ## Mise en place du projet
 
@@ -86,7 +77,7 @@ $ source venv/bin/activate
 #### Windows
 ```
 $ cd dancare
-$ python3 -m pip install vitualenv
+$ pip install virtualenv
 $ virtualenv venv
 $ source venv/Scripts/activate
 ```
@@ -127,9 +118,9 @@ Toutefois, nous vous conseillons d'utiliser les images du dossier
 ## Aide et autres
 
 #### Apports
-`Vous etes libre de télécharger le projet et le modifier comme bon vous semble`
+Vous etes libre de télécharger le projet et le modifier comme bon vous semble
 
 #### Aide
-Vous pouvez nous joindre via `fassanebolly@gmail.com` ou encore via
+Pour tout, `fassanebolly@gmail.com` ou encore via
 `ludvlavonou@gmail.com`
 
