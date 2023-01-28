@@ -100,9 +100,7 @@ Trouver ce modèle résultant dans `diab_retina_app/model`.
 ### Visualisation de la plateforme
 ```
 $ python manage.py runserver
-ou
 $ python manage.py runserver 0.0.0.0:8000
-ou
 $ python manage.py runserver 0.0.0.0:port
 ```
 Aller sur votre navigateur et taper `localhost:8000` ou `localhost:2100`, ou `adresse-ip:port` sur votre réseau local.
