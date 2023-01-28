@@ -80,6 +80,21 @@ $text-color: #343a40;
     
 }
 
+
+.whatis {
+
+    .content {
+        padding: 25px 15px;
+        border-radius: $border-radius;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+    .content:hover {
+        box-shadow: 5px 5px 8px #efefef;
+    }
+}
+
+
 .stage {
 
     .container {
