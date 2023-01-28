@@ -66,12 +66,19 @@
   padding: 25px 15px;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 1.2em;
   transition: 0.4s ease;
 }
 .whatis .content:hover {
   box-shadow: 5px 5px 8px #efefef;
 }
+.whatis .content:hover strong {
+  color: #ED776B;
+}
 
+.stage {
+  padding-top: 30px;
+}
 .stage .container .content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
