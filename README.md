@@ -70,6 +70,7 @@ $ git clone https://github.com/fassane/dancare
 #### Linux
 ```
 $ cd dancare
+$ sudo apt install python3-venv
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
@@ -93,8 +94,8 @@ $ pip install -r requirements.txt
 ### Important
 
 Présentement, les modèles ont été entrainé depuis les données de la compétiton
-ATPOS sur kaggle https://www.kaggle.com/competitions/aptos2019-blindness-detection/data, Tensorflow également. 
-Trouver ce modèle résultant dans `diab_retina_app/model`.
+ATPOS sur kaggle https://www.kaggle.com/competitions/aptos2019-blindness-detection/data, Tensorflow également. <br/>
+Trouver le modèle résultant dans `diab_retina_app/model`.
 
 
 ### Visualisation de la plateforme
@@ -103,22 +104,23 @@ $ python manage.py runserver
 $ python manage.py runserver 0.0.0.0:8000
 $ python manage.py runserver 0.0.0.0:port
 ```
-Aller sur votre navigateur et taper `localhost:8000` ou `localhost:2100`, ou `adresse-ip:port` sur votre réseau local.
+Aller sur votre navigateur et taper `localhost:8000`, ou `adresse-ip:port` sur votre réseau local.
 
 
 ### Utilisation
 
-Aller a la page de démo, téléverser une image d'oeil saine ou suceptible de
-contenir des sequelles de *réthinopathie diabétique* et procéder au test.
-Toutefois, nous vous conseillons d'utiliser les images du dossier 
+- Aller à la page de démo 
+- Téléverser une image d'oeil saine ou douteuse 
+- Procéder au test
+Cependant, nous vous conseillons d'utiliser les images du dossier 
 `diab_retina_app/test`
 
 
 
-## Aide et autres
+## Conclusion
 
 #### Open source
-Vous etes libre de télécharger le projet et de modifier la logique comme bon vous semble
+Vous etes libre de télécharger le projet et de modifier la logique comme bon vous semble.
 
 #### Aide
 Pour tout, `fassanebolly@gmail.com` ou encore via
