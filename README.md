@@ -4,12 +4,12 @@
 
 
 ## Introduction
-Détection de la Rétinopathie Diabétique en utilisant le deep learning
+Dancare, une platefome de Détection de la Rétinopathie Diabétique en utilisant le deep learning.
 
 
 
-## Technologies utilisées
-Pyhton, Django, Tensorflow, Keras, PyTorch
+## Technos utilisées
+**Python**, **Django**, **Tensorflow**, **Keras**, **PyTorch**, **Sass**, **JQuery**
 
 
 ## Contenu
@@ -42,9 +42,7 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
 
 ### A propos | Tout 
 <p align = "left" >
-  <img width="320" height="215" src="github_images/about-1.png">
-  <img width="320" height="215"  src="github_images/about-2.png"> 
-  <img width="320" height="215"  src="github_images/about-3.png"> 
+  <img width="320" height="215" src="github_images/about-1.png"> 
 </p>
 
 ### Demonstration 
@@ -52,7 +50,6 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
   <img width="320" height="215" src="github_images/demo-1.png">
   <img width="320" height="215"  src="github_images/demo-2.png"> 
   <img width="320" height="215"  src="github_images/demo-3.png"> 
-  <img width="320" height="215"  src="github_images/demo-4.png"> 
   <img width="320" height="215"  src="github_images/demo-5.png"> 
   <img width="320" height="215"  src="github_images/demo-6.png"> 
   <img width="320" height="215"  src="github_images/demo-7.png"> 
@@ -70,23 +67,31 @@ Pyhton, Django, Tensorflow, Keras, PyTorch
 
 
 
-## Mise en place
+## Mise en place du projet
 
-### Suivre les étapes suivantes
 
-#### Cloner le projet
+### Cloner le projet
 ```
 $ git clone https://github.com/fassane/dancare
 ```
 
-#### Mettre en l'environnement virtuel
+### Mettre en l'environnement virtuel
+
+#### Linux
 ```
 $ cd dancare
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
+#### Windows
+```
+$ cd dancare
+$ python3 -m pip install vitualenv
+$ virtualenv venv
+$ source venv/Scripts/activate
+```
 
-#### Installation des libraires
+### Installation des libraires
 ```
 $ pip install pip --upgrade
 $ pip intall setuptools --upgrade
@@ -95,23 +100,22 @@ $ pip install -r requirements.txt
 ```
 
 
-#### Important
+### Important
 
 Présentement, les modèles ont été entrainé depuis les données de la compétiton
 ATPOS disponible sur *kaggle* via le lien https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Aussi à l'aide de **Tensorflow**. 
 Vous pouvez trouver ces modèles dans le dossier `diab_retina_app/model`.
 
 
-#### Visualisation de la plateforme
+### Visualisation de la plateforme
 ```
-$ python manage.py runserver
-$ python manage.py runserver 2100 (pour tourner sur le port 2400)
+$ python manage.py runserver 0.0.0.0:8000
+$ python manage.py runserver 0.0.0.0:2400 (sur le port 2400)
 ```
-Aller dans votre navigateur et taper `localhost:8000` ou `localhost:2100` selon
-ce que vous avez entez
+Aller sur votre navigateur et taper `localhost:8000` ou `localhost:2100`, ou `adresse-ip:port` sur votre réseau local.
 
 
-#### Utilisation
+### Utilisation
 
 Aller a la page de démo, téléverser une image d'oeil saine ou suceptible de
 contenir des sequelles de *réthinopathie diabétique* et procéder au test.
@@ -120,7 +124,7 @@ Toutefois, nous vous conseillons d'utiliser les images du dossier
 
 
 
-## Mot de fin
+## Aide et autres
 
 #### Apports
 `Vous etes libre de télécharger le projet et le modifier comme bon vous semble`
