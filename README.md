@@ -65,7 +65,7 @@
 $ git clone https://github.com/fassane/dancare
 ```
 
-### Mettre en l'environnement virtuel
+### Création de l'environnement virtuel
 
 #### Linux
 ```
