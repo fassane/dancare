@@ -117,7 +117,7 @@ Toutefois, nous vous conseillons d'utiliser les images du dossier
 
 ## Aide et autres
 
-#### Apports
+#### Open source
 Vous etes libre de télécharger le projet et le modifier comme bon vous semble
 
 #### Aide
