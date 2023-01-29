@@ -189,10 +189,6 @@ header .headside {
   justify-content: space-between;
   align-items: center;
 }
-header .headside .headside_left img {
-  width: 190px;
-  height: 36px;
-}
 header .headside .headside_right {
   display: flex;
   justify-content: center;
@@ -211,10 +207,18 @@ header .headside .headside_right .item:hover {
 header .headside .headside_right .button {
   padding: 6px 8px;
   margin: 0 5px;
-  border-radius: 6px;
+  border: 2px solid #ED776B;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ED776B;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+header .headside .headside_right .button:hover {
+  border-color: transparent;
   background-color: #ED776B;
   color: #fff;
-  font-weight: 700;
+  color: #fff;
 }
 
 /* ------------ header --------------- */

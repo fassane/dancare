@@ -70,7 +70,8 @@
   transition: 0.4s ease;
 }
 .whatis .content:hover {
-  box-shadow: 5px 5px 8px #efefef;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
 }
 .whatis .content:hover strong {
   color: #ED776B;

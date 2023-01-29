@@ -187,9 +187,8 @@ body {
   background-size: cover;
   z-index: 200;
 }
-
-
 /* ------------ global styles --------------- */
+
 /* ------------ header --------------- */
 header {
   padding: 10px 0;
@@ -202,12 +201,12 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .headside_left {
-      img {
-      width: 190px;
-      height: 36px;
-      }
-    }
+    // .headside_left {
+      // img {
+      // width: 190px;
+      // height: 36px;
+      // }
+    // }
     .headside_right {
       display: flex;
       justify-content: center;
@@ -227,10 +226,17 @@ header {
       .button {
         padding: 6px 8px;
         margin: 0 5px;
-        border-radius: 6px;
-        background-color: $secondary-color;
-        color: #fff;
+        border: 2px solid $secondary-color;
+        border-radius: 8px;
+        background-color: transparent;
+        color: $secondary-color;
         font-weight: 700;
+        transition: 0.3s ease-in-out;
+      }
+      .button:hover {
+        border-color: transparent;
+        background-color: $secondary-color;
+        color: #fff;color: #fff;
       }
 
     }

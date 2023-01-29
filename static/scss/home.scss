@@ -91,7 +91,8 @@ $text-color: #343a40;
         transition: .4s ease;
     }
     .content:hover {
-        box-shadow: 5px 5px 8px #efefef;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(0.98);
         strong {
             color: $secondary-color;
         }

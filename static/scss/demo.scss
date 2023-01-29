@@ -114,12 +114,16 @@ $text-color: #343a40;
                     .card_bottom {
                         border: 1px solid #efefef;
                         text-align: center;
-                        padding: 40px 20px;
+                        padding: 35px 10px;
                         border-radius: $border-radius;
                         cursor: pointer;
                         transition: .3s ease;
+
                         button, input {
                             cursor: pointer;
+                        }
+                        button {
+                            padding: 10px 12px;
                         }
                     }
                     .card_bottom:hover {

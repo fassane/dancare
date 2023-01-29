@@ -92,13 +92,16 @@
 .pratique .main_content .content .select_image_container .card .card_bottom {
   border: 1px solid #efefef;
   text-align: center;
-  padding: 40px 20px;
+  padding: 35px 10px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .pratique .main_content .content .select_image_container .card .card_bottom button, .pratique .main_content .content .select_image_container .card .card_bottom input {
   cursor: pointer;
+}
+.pratique .main_content .content .select_image_container .card .card_bottom button {
+  padding: 10px 12px;
 }
 .pratique .main_content .content .select_image_container .card .card_bottom:hover {
   box-shadow: 5px 5px 10px #efefef;
