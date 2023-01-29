@@ -25,7 +25,7 @@
 
 ## Captures d'écran
 
-### Acceuil | Inteface prinpale
+### Page Acceuil
 <p align = "left" >
   <img width="350" height="230" src="github_images/home-1.png">
   <img width="350" height="230"  src="github_images/home-2.png"> 
@@ -33,18 +33,18 @@
   <img width="350" height="230" src="github_images/home-4.png"> 
 </p>
 
-### Fonctionnalités | Procédures
+### Page Fonctionnalités
 <p align = "left" >
   <img width="350" height="230" src="github_images/fonction-1.png">
   <img width="350" height="230"  src="github_images/fonction-2.png"> 
 </p>
 
-### A propos | Tout 
+### Page A propos
 <p align = "left" >
   <img width="350" height="230" src="github_images/about-1.png"> 
 </p>
 
-### Demonstration 
+### Page Démonstration 
 <p align = "left" >
   <img width="350" height="230" src="github_images/demo-1.png">
   <img width="350" height="230"  src="github_images/demo-2.png"> 
