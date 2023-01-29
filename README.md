@@ -76,10 +76,10 @@ $ source venv/bin/activate
 ```
 #### Windows
 ```
-$ cd dancare
-$ pip install virtualenv
-$ virtualenv venv
-$ .\venv\Scripts\activate
+> cd dancare
+> pip install virtualenv
+> virtualenv venv
+> .\venv\Scripts\activate
 ```
 
 ### Installation des libraires
