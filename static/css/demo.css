@@ -41,6 +41,9 @@
 .pratique {
   padding-top: 30px;
 }
+.pratique .pdr_pdl {
+  padding: 0 40px;
+}
 .pratique .main_content {
   padding: 20px 15px 30px 15px;
   border-radius: 10px;

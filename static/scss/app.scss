@@ -157,16 +157,15 @@ body {
     color: #fff;
     font-weight: 700;
 
-    .arrow_container {
-      background-color: #fff;
-      padding: 10px;
+    .icon_container {
+      background-color: transparent;
+      padding: 25px;
+      border: 5px dashed #fff;
       border-radius: 50%;
       margin-left: 10px;
-      position: relative;
-      top: 0;
-      transition: 2s ease;
-      -webkit-animation: toptobottom 1.5s infinite linear;
-      animation: toptobottom 1.5s infinite linear;
+      -webkit-animation: rotation 3s infinite linear;
+      animation: rotation 3s infinite linear;
+      margin-bottom: -12px;
     }
     svg {
       width: 40px;
@@ -339,13 +338,15 @@ footer {
 }
 
 
-
-
-
-
-
-
-
 /* ------------ footer --------------- */
 
+
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
 /*# sourceMappingURL=app.scss.map */
+
+
+

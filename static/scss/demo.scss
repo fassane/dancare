@@ -56,6 +56,10 @@ $text-color: #343a40;
 .pratique {
     padding-top: 30px;
 
+    .pdr_pdl {
+        padding: 0 40px;
+    }
+
     .main_content {
         padding: 20px 15px 30px 15px;
         border-radius: $border-radius;

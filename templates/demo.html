@@ -10,8 +10,8 @@
     <div class="container">
         <div class="title">
             Test et démonstration
-            <svg class="arrow_container">
-                <use xlink:href="#arrow_down"></use>
+            <svg class="icon_container">
+                <!-- <use xlink:href="#demo_icon"></use> -->
             </svg>
         </div>
     </div>
@@ -73,60 +73,62 @@
             <div class="app_title">
                 Mise en pratique
             </div>
-            <div class="main_content bg_white">
-                <div class="content">
-                    
-                    <div class="col bg_white image_container">
-                        <img src="../static/images/demo/no-image.svg" id="banner" alt="select-img" >
-                    </div>
-
-                    <div class="col bg_white select_image_container">
-                        <div class="card">
-                            <div class="card_top">
-                                Cliquer pour téléverser une image d'oeil 👇 
-                            </div>
-                            <div class="card_center">
-                                <svg class="arrow_container">
-                                    <use xlink:href="#arrow_down"></use>
-                                </svg>
-                            </div>
-                            <div class="card_bottom">
-
-                                <div class="buttons">
-                                    <button class="btn "><input type="file" id="image"/></button>
+            <div class="pdr_pdl">
+                <div class="main_content bg_white">
+                    <div class="content">
+                        
+                        <div class="col bg_white image_container">
+                            <img src="../static/images/demo/no-image.svg" id="banner" alt="select-img" >
+                        </div>
+    
+                        <div class="col bg_white select_image_container">
+                            <div class="card">
+                                <div class="card_top">
+                                    Cliquer pour téléverser une image d'oeil 👇 
                                 </div>
-
-                                <div class="result" style="display: none;margin-left: 10%">
-                                    <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="disease"></p>
-                                    <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="accuracy"></p>
-                                    <p>
-                                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                                        aria-controls="collapseExample">
-                                            View Graph <i class="fas fa-angle-down"></i>
-                                        </a>
-                                        <a href="/" class="ml-5">
-                                            Try again <i class="fas fa-sync"></i>
-                                        </a>
-                                    </p>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-body">
-                                            <img id="graph" style="width: 350px">
+                                <div class="card_center">
+                                    <svg class="arrow_container">
+                                        <use xlink:href="#arrow_down"></use>
+                                    </svg>
+                                </div>
+                                <div class="card_bottom">
+    
+                                    <div class="buttons">
+                                        <button class="btn "><input type="file" id="image"/></button>
+                                    </div>
+    
+                                    <div class="result" style="display: none;margin-left: 10%">
+                                        <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="disease"></p>
+                                        <p style="font-weight: bold;font-size: 24px;color: #3f51b5;" id="accuracy"></p>
+                                        <p>
+                                            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                                View Graph <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <a href="/" class="ml-5">
+                                                Try again <i class="fas fa-sync"></i>
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                                <img id="graph" style="width: 350px">
+                                            </div>
                                         </div>
                                     </div>
+    
                                 </div>
-
                             </div>
                         </div>
+    
                     </div>
-
-                </div>
-                <div class="button_container">
-                    <button class="btn test_button" id="process">
-                        Procéder au test
-                        <svg>
-                            <use xlink:href="#cloud" fill="#ED776B"></use>
-                        </svg>
-                    </button>
+                    <div class="button_container">
+                        <button class="btn test_button" id="process">
+                            Procéder au test
+                            <svg>
+                                <use xlink:href="#cloud" fill="#ED776B"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
             

@@ -148,16 +148,15 @@ body {
   color: #fff;
   font-weight: 700;
 }
-.custom_banner .title .arrow_container {
-  background-color: #fff;
-  padding: 10px;
+.custom_banner .title .icon_container {
+  background-color: transparent;
+  padding: 25px;
+  border: 5px dashed #fff;
   border-radius: 50%;
   margin-left: 10px;
-  position: relative;
-  top: 0;
-  transition: 2s ease;
-  -webkit-animation: toptobottom 1.5s infinite linear;
-  animation: toptobottom 1.5s infinite linear;
+  -webkit-animation: rotation 3s infinite linear;
+  animation: rotation 3s infinite linear;
+  margin-bottom: -12px;
 }
 .custom_banner .title svg {
   width: 40px;
@@ -301,6 +300,14 @@ footer .copyright {
 }
 
 /* ------------ footer --------------- */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=app.scss.map */
 
 /*# sourceMappingURL=app.css.map */
