@@ -23,7 +23,7 @@
 
 ## Screenshoots
 
-### Home 
+### Home page
 <p align = "left" >
   <img width="350" height="230" src="github_images/home-1.png">
   <img width="350" height="230"  src="github_images/home-2.png"> 
@@ -31,18 +31,18 @@
   <img width="350" height="230" src="github_images/home-4.png"> 
 </p>
 
-### Function
+### Function page
 <p align = "left" >
   <img width="350" height="230" src="github_images/fonction-1.png">
   <img width="350" height="230"  src="github_images/fonction-2.png"> 
 </p>
 
-### About
+### About page
 <p align = "left" >
   <img width="350" height="230" src="github_images/about-1.png"> 
 </p>
 
-### Demonstration 
+### Demonstration page
 <p align = "left" >
   <img width="350" height="230" src="github_images/demo-1.png">
   <img width="350" height="230"  src="github_images/demo-2.png"> 
@@ -95,7 +95,7 @@ $ pip install -r requirements.txt
 ### Important
 
 currently, the model has been trained with kaggle APTPOS competition datas https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Tensorflow too. <br/>
-Find this model in `diab_retina_app/model`.
+Find this model in **./diab_retina_app/model**.
 
 
 ### Run application
@@ -109,12 +109,12 @@ $ python manage.py runserver 0.0.0.0:port
 Go to your browser and type **localhost:8000**, or **adresse-ip:port** on your local network.
 
 
-### Utilisation
+### Usage
 
 - Go to demo page
 - Upload an healthy or not eye image 
 - Start the test <br/>
-However, we recommand you to use the images of **diab_retina_app/test** folder
+However, we recommand you use the images of **./diab_retina_app/test** folder
 
 
 
