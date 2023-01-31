@@ -75,16 +75,11 @@ $ source venv/bin/activate
 ```
 #### Windows
 ```
-<<<<<<< HEAD
 > python -m pip install virtualenv
 ```
 ```
 > cd dancare
-=======
 > cd dancare
-> pip install virtualenv
->>>>>>> fe7833332acb1e05d65c124c8524b40a5abbd266
-> virtualenv venv
 > .\venv\Scripts\activate
 ```
 
@@ -118,7 +113,7 @@ Go to your browser and type **localhost:8000**, or **adresse-ip:port** on your l
 
 - Go to demo page
 - Upload an healthy or not eye image 
-- Start the test <br/><br/>
+- Start the test <br/>
 However, we recommand you to use the images of **diab_retina_app/test** folder
 
 
