@@ -197,11 +197,13 @@ header .headside .headside_right .item {
   padding: 6px 8px;
   margin: 0 5px;
   color: #343a40;
+  border: 2px solid transparent;
   border-radius: 6px;
   font-weight: 600;
 }
 header .headside .headside_right .item:hover {
   background-color: #efefef;
+  border-color: #efefef;
 }
 header .headside .headside_right .button {
   padding: 6px 8px;
