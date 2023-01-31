@@ -75,10 +75,15 @@ $ source venv/bin/activate
 ```
 #### Windows
 ```
+<<<<<<< HEAD
 > python -m pip install virtualenv
 ```
 ```
 > cd dancare
+=======
+> cd dancare
+> pip install virtualenv
+>>>>>>> fe7833332acb1e05d65c124c8524b40a5abbd266
 > virtualenv venv
 > .\venv\Scripts\activate
 ```
