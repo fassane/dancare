@@ -274,6 +274,18 @@ footer .footer_links .link {
 footer .footer_links .link:hover {
   color: #fff;
 }
+footer h3 {
+  position: relative;
+}
+footer h3:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2.5px;
+  background-color: #efefef;
+}
 footer .separator {
   width: 80%;
   height: 1px;
