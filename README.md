@@ -1,31 +1,29 @@
-
-# Dancare, detection de la Rétinopathie Diabétique
+# Dancare, diabetic retinopathy detection
 ![HeaderImage](github_images/logo.png) 
 
 
 ## Introduction
-*Dancare*, une platefome de Détection de la Rétinopathie Diabétique en utilisant le deep learning.
+*Dancare*, a small web application to detect diabetic retinopathy using deep learning.
 
 
-
-## Technos utilisées
+## Framework and librairies
 *Python*, *Django*, *Tensorflow*, *Keras*, *PyTorch*, *Sass*, *JQuery*
 
 
-## Contenu
+## Content
 
-**Page d'acceuil:** Présentation, 
+**Home page:** Presentation, 
 
-**Page Fonctionnalités:** Modèles de données
+**Function page:** data models
 
-**Page à propos:** Tout sur la plateforme
+**About page:** about plateform
 
-**Page Demo et Test:** Démo de la solution
+**Demo and test page:** Solution
 
 
-## Captures d'écran
+## Screenshoots
 
-### Page Acceuil
+### Home 
 <p align = "left" >
   <img width="350" height="230" src="github_images/home-1.png">
   <img width="350" height="230"  src="github_images/home-2.png"> 
@@ -33,18 +31,18 @@
   <img width="350" height="230" src="github_images/home-4.png"> 
 </p>
 
-### Page Fonctionnalités
+### Function
 <p align = "left" >
   <img width="350" height="230" src="github_images/fonction-1.png">
   <img width="350" height="230"  src="github_images/fonction-2.png"> 
 </p>
 
-### Page A propos
+### About
 <p align = "left" >
   <img width="350" height="230" src="github_images/about-1.png"> 
 </p>
 
-### Page Démonstration 
+### Demonstration 
 <p align = "left" >
   <img width="350" height="230" src="github_images/demo-1.png">
   <img width="350" height="230"  src="github_images/demo-2.png"> 
@@ -57,35 +55,38 @@
 
 
 
-## Mise en place du projet
+## Setup project
 
-
-### Cloner le projet
+### Clone project
 ```
 $ git clone https://github.com/fassane/dancare
 ```
 
-### Création de l'environnement virtuel
+### Create virtual environment
 
 #### Linux
 ```
-$ cd dancare
 $ sudo apt install python3-venv
+```
+```
+$ cd dancare
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 #### Windows
 ```
-$ cd dancare
-$ pip install virtualenv
-$ virtualenv venv
-$ .\venv\Scripts\activate
+> python -m pip install virtualenv
+```
+```
+> cd dancare
+> virtualenv venv
+> .\venv\Scripts\activate
 ```
 
-### Installation des libraires
+### librairies Installation
 ```
 $ pip install pip --upgrade
-$ pip intall setuptools --upgrade
+$ pip install setuptools --upgrade
 $ pip install django
 $ pip install -r requirements.txt
 ```
@@ -93,36 +94,35 @@ $ pip install -r requirements.txt
 
 ### Important
 
-Présentement, les modèles ont été entrainé depuis les données de la compétiton
-ATPOS sur kaggle https://www.kaggle.com/competitions/aptos2019-blindness-detection/data, Tensorflow également. <br/>
-Trouver le modèle résultant dans `diab_retina_app/model`.
+currently, the model has been trained with kaggle APTPOS competition datas https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Tensorflow too. <br/>
+Find this model in `diab_retina_app/model`.
 
 
-### Visualisation de la plateforme
+### Run application
 ```
 $ python manage.py runserver
+or
 $ python manage.py runserver 0.0.0.0:8000
+or
 $ python manage.py runserver 0.0.0.0:port
 ```
-Aller sur votre navigateur et taper `localhost:8000`, ou `adresse-ip:port` sur votre réseau local.
+Go to your browser and type **localhost:8000**, or **adresse-ip:port** on your local network.
 
 
 ### Utilisation
 
-- Aller à la page de démo 
-- Téléverser une image d'oeil saine ou douteuse 
-- Procéder au test <br/>
-Cependant, nous vous conseillons d'utiliser les images du dossier 
-`diab_retina_app/test`
+- Go to demo page
+- Upload an healthy or not eye image 
+- Start the test <br/><br/>
+However, we recommand you to use the images of **diab_retina_app/test** folder
 
 
 
 ## Conclusion
 
 #### Open source
-Vous etes libre de télécharger le projet et de modifier la logique comme bon vous semble.
+You are free to download the project and modify the logic as you wish 
 
-#### Aide
-Pour tout, `fassanebolly@gmail.com` ou encore via
-`ludvlavonou@gmail.com`
+#### Help
+Reach me on `fassanebolly@gmail.com` or on `ludvlavonou@gmail.com`
 
