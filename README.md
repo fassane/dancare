@@ -50,6 +50,7 @@
   <img width="350" height="230"  src="github_images/demo-4.png"> 
   <img width="350" height="230"  src="github_images/demo-5.png"> 
   <img width="350" height="230"  src="github_images/demo-6.png"> 
+   <img width="350" height="230"  src="github_images/demo-7.png"> 
 </p>
 
 
