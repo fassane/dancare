@@ -79,7 +79,7 @@ $ source venv/bin/activate
 ```
 ```
 > cd dancare
-> cd dancare
+> virtualenv venv
 > .\venv\Scripts\activate
 ```
 
