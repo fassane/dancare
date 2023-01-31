@@ -112,7 +112,7 @@ Go to your browser and type **localhost:8000**, or **adresse-ip:port** on your l
 ### Usage
 
 - Go to demo page
-- Upload an healthy or not eye image 
+- Upload an healthy eye image or not
 - Start the test <br/>
 However, we recommand you use the images of **./diab_retina_app/test** folder
 
