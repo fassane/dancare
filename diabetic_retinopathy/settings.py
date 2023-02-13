@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'diab_retina_app.apps.DiabRetinaAppConfig',
+    'dr_app.apps.DiabRetinaAppConfig',
 ]
 
 MIDDLEWARE = [
