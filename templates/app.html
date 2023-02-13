@@ -306,7 +306,7 @@
                         let result = (xhr.responseText).split("-");
                         let disease = result[0];
                         let accuracy = result[1];
-                        $('.loader').hide()
+                        $('.loader_container').hide()
                         $('#disease').html("Result: " + disease)
                         $('#accuracy').html("Accuracy: " + parseInt(accuracy).toFixed(2) + "%")
                         $('#graph').attr('src', '{% static "graph.png" %}')
