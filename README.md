@@ -96,7 +96,7 @@ $ pip install -r requirements.txt
 ### Important
 
 currently, the model has been trained with kaggle APTPOS competition datas https://www.kaggle.com/competitions/aptos2019-blindness-detection/data. Tensorflow too. <br/>
-Find this model in **./diab_retina_app/model**.
+Find this model in **./dr_app/model**.
 
 
 ### Run application
