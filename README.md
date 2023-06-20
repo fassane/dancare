@@ -112,9 +112,9 @@ Go to your browser and type **localhost:8000**, or **adresse-ip:port** on your l
 
 ### Usage
 
-- Go to demo page
-- Upload an healthy eye image or not
-- Start the test <br/>
+- **Go to demo page**
+- **Upload an healthy eye image or not**
+- **Start the test <br/>**
 However, we recommand you use the images of **./dr_app/test** folder
 
 
@@ -125,5 +125,5 @@ However, we recommand you use the images of **./dr_app/test** folder
 You are free to download the project and modify the logic as you wish 
 
 #### Help
-Reach me on `fassanebolly@gmail.com` or on `ludvlavonou@gmail.com`
+Reach me on `fassanebolly@gmail.com`
 
